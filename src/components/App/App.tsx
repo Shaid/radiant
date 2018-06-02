@@ -12,11 +12,10 @@ const App = styled.div`
 class AppContainer extends React.PureComponent<IProps> {
   render() {
     const store = this.props.store
-    console.log(store)
     return (
       <ThemeProvider theme={theme}>
         <App>
-          <h1> RADIANT! </h1>
+
         </App>
       </ThemeProvider>
     )
