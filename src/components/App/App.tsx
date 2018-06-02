@@ -11,11 +11,11 @@ const App = styled.div`
 @observer
 class AppContainer extends React.PureComponent<IProps> {
   render() {
-    const store = this.props.store
+    // const store = this.props.store
     return (
       <ThemeProvider theme={theme}>
         <App>
-
+          <h1>Radiant</h1>
         </App>
       </ThemeProvider>
     )
