@@ -1,0 +1,71 @@
+{
+ "env": {
+   "es6": true,
+   "node": true,
+   "browser": true,
+   "jest": true
+  },
+  "extends": [
+    "airbnb",
+    "bom"
+  ],
+  "parser": "typescript-eslint-parser",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "plugins": [
+    "typescript"
+  ],
+  "overrides": {
+    "files": ["**/*.d.ts"],
+    "rules": {
+      "camelcase": "off",
+      "import/prefer-default-export": "off",
+
+      // work around issue where eslint cannot pick up interfaces:
+      // https://github.com/eslint/typescript-eslint-parser/issues/416
+      // we will put interfaces in *.d.ts files and ignore no-undef errors in them
+      "no-undef": "off"
+    }
+  },
+  "rules": {
+    "arrow-body-style": ["error", "as-needed"],
+    // Ensure consistent use of file extension within the import path
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/extensions.md
+    "import/extensions": ["error", "always", {
+      "js": "never",
+      "mjs": "never",
+      "jsx": "never",
+      "ts": "never",
+      "tsx": "never"
+    }],
+    "import/no-extraneous-dependencies": ["error", {
+      "devDependencies": ["**/*.test.{js,ts,tsx}", "**/*.spec.js"]
+    }],
+    "no-console": "off", // allow console statements for now
+    "no-trailing-spaces": "warn",
+    "no-undef": "off",
+    "no-unused-expressions": ["error", {
+      "allowTaggedTemplates": true
+    }],
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+    "typescript/no-unused-vars": "warn", // this is needed for unused vars handling
+    "no-param-reassign": ["error", { "props": true, "ignorePropertyModificationsFor": ["self"] }],
+    "curly": ["error", "all"]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".mjs", ".js", ".json", ".ts", ".tsx"],
+        "moduleDirectory": ["node_modules", "src/"]
+      }
+    },
+    "import/extensions": [
+      ".js",
+      ".mjs",
+      ".jsx",
+      ".ts",
+      ".tsx"
+    ]
+  }
+}

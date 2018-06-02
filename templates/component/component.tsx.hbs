@@ -1,0 +1,17 @@
+import React from 'react'
+import { IProps, IDefaultProps, PropsWithDefaults, IState } from './{{ componentName }}.d'
+
+class {{ componentName }} extends React.PureComponent<IProps, IState> {
+  static defaultProps: Partial<IDefaultProps> = {}
+
+  render() {
+    const {} = this.props as PropsWithDefaults
+    return (
+      <div>
+        Generated component: {{ componentName }}
+      </div>
+    )
+  }
+}
+
+export default {{ componentName }}

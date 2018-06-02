@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DailyForecast Store expect the response data to match dailyForecast store mock data 1`] = `
+Object {
+  "date": 1522677600,
+  "icon": "Partly Cloudy",
+  "iconCode": null,
+  "precis": "Partly cloudy.",
+  "rainChance": null,
+  "rainRange": null,
+  "tempMax": null,
+  "tempMin": null,
+}
+`;
