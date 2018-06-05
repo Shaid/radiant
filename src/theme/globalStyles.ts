@@ -8,6 +8,7 @@ export default () => {
 
     html {
       box-sizing: border-box;
+      font-size: 20px;
     }
 
     *,
@@ -17,20 +18,14 @@ export default () => {
     }
 
     body {
-      font-family: 'Inter UI', sans-serif;
+      font-family: 'EB Garamond', serif;
+      color: #333;
+      font-size: 1rem;
+      background-color: #eee;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      font-size: 16px;
       margin: 0;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-      font-family: 'Rubik', sans-serif;
     }
 
     #root {

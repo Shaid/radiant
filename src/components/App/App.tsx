@@ -1,7 +1,8 @@
 import React from 'react'
 import { observer } from 'mobx-react'
-
 import styled, { ThemeProvider, theme } from 'theme'
+
+import UITest from 'components/UITest'
 import { IProps } from './App.d'
 
 const App = styled.div`
@@ -15,7 +16,7 @@ class AppContainer extends React.PureComponent<IProps> {
     return (
       <ThemeProvider theme={theme}>
         <App>
-          <h1>Radiant</h1>
+          <UITest />
         </App>
       </ThemeProvider>
     )
