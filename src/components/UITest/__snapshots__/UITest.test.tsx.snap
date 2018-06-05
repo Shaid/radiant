@@ -1,0 +1,315 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UITest /> renders 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <UITest />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <p>
+          Alone, you wait, ready to cross.
+        </p>,
+        <p>
+          On a nearby corner a violin sings; the cadence of its bow dancing in time with the rhythm of your thoughts.
+        </p>,
+        <p>
+          A 
+          <strong>
+            moment of inchoate longing
+          </strong>
+           builds inside you, wishing to step into that oncoming rush and 
+        </p>,
+        <UITest__Quote>
+          allowing it to carry you away to a quieter place,
+        </UITest__Quote>,
+        <p>
+          to that inevitable finality where all music stops (
+          <em>
+            where breath ceases
+          </em>
+          )
+        </p>,
+        <p>
+          the place where I wait for you.
+        </p>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Alone, you wait, ready to cross.",
+        },
+        "ref": null,
+        "rendered": "Alone, you wait, ready to cross.",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "On a nearby corner a violin sings; the cadence of its bow dancing in time with the rhythm of your thoughts.",
+        },
+        "ref": null,
+        "rendered": "On a nearby corner a violin sings; the cadence of its bow dancing in time with the rhythm of your thoughts.",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "A ",
+            <strong>
+              moment of inchoate longing
+            </strong>,
+            " builds inside you, wishing to step into that oncoming rush and ",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "A ",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "moment of inchoate longing",
+            },
+            "ref": null,
+            "rendered": "moment of inchoate longing",
+            "type": "strong",
+          },
+          " builds inside you, wishing to step into that oncoming rush and ",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "allowing it to carry you away to a quieter place,",
+        },
+        "ref": null,
+        "rendered": "allowing it to carry you away to a quieter place,",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "to that inevitable finality where all music stops (",
+            <em>
+              where breath ceases
+            </em>,
+            ")",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "to that inevitable finality where all music stops (",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "where breath ceases",
+            },
+            "ref": null,
+            "rendered": "where breath ceases",
+            "type": "em",
+          },
+          ")",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "the place where I wait for you.",
+        },
+        "ref": null,
+        "rendered": "the place where I wait for you.",
+        "type": "p",
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <p>
+            Alone, you wait, ready to cross.
+          </p>,
+          <p>
+            On a nearby corner a violin sings; the cadence of its bow dancing in time with the rhythm of your thoughts.
+          </p>,
+          <p>
+            A 
+            <strong>
+              moment of inchoate longing
+            </strong>
+             builds inside you, wishing to step into that oncoming rush and 
+          </p>,
+          <UITest__Quote>
+            allowing it to carry you away to a quieter place,
+          </UITest__Quote>,
+          <p>
+            to that inevitable finality where all music stops (
+            <em>
+              where breath ceases
+            </em>
+            )
+          </p>,
+          <p>
+            the place where I wait for you.
+          </p>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Alone, you wait, ready to cross.",
+          },
+          "ref": null,
+          "rendered": "Alone, you wait, ready to cross.",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "On a nearby corner a violin sings; the cadence of its bow dancing in time with the rhythm of your thoughts.",
+          },
+          "ref": null,
+          "rendered": "On a nearby corner a violin sings; the cadence of its bow dancing in time with the rhythm of your thoughts.",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "A ",
+              <strong>
+                moment of inchoate longing
+              </strong>,
+              " builds inside you, wishing to step into that oncoming rush and ",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "A ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "moment of inchoate longing",
+              },
+              "ref": null,
+              "rendered": "moment of inchoate longing",
+              "type": "strong",
+            },
+            " builds inside you, wishing to step into that oncoming rush and ",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "allowing it to carry you away to a quieter place,",
+          },
+          "ref": null,
+          "rendered": "allowing it to carry you away to a quieter place,",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "to that inevitable finality where all music stops (",
+              <em>
+                where breath ceases
+              </em>,
+              ")",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "to that inevitable finality where all music stops (",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "where breath ceases",
+              },
+              "ref": null,
+              "rendered": "where breath ceases",
+              "type": "em",
+            },
+            ")",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "the place where I wait for you.",
+          },
+          "ref": null,
+          "rendered": "the place where I wait for you.",
+          "type": "p",
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
