@@ -10,7 +10,7 @@ const ActionButton = styled.button`
   font-family: 'EB Garamond', serif;
   font-size: 1rem;
   cursor: pointer;
-  color: ${theme.primaryColour}
+  color: ${theme.primaryColour};
 `
 
 class Action extends React.PureComponent<IProps, IState> {
