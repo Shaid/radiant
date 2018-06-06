@@ -1,6 +1,6 @@
 const palette = {
-  marineBlue: '#003c71',
-  offWhite: '#dddddd',
+  offWhite: '#dadada',
+  offBlack: '#222222',
   black: '#000000',
   red: '#cc0000',
   yellow: '#cccc00',

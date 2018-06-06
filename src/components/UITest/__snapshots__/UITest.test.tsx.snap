@@ -37,9 +37,17 @@ ShallowWrapper {
           <p>
             You feel the weight of the bridges above you.
           </p>
+          <UITest__Exits>
+            <div>
+              A bridge stretches away to the east.
+            </div>
+            <div>
+              There is a closed door at the end of the platform.
+            </div>
+          </UITest__Exits>
         </UITest__RoomDescription>,
         <UITest__ActionPanel>
-          A young lady is here. She seems bored.
+          <Actor />
         </UITest__ActionPanel>,
         <UITest__StatusBar>
           <p>
@@ -77,6 +85,14 @@ ShallowWrapper {
             <p>
               You feel the weight of the bridges above you.
             </p>,
+            <UITest__Exits>
+              <div>
+                A bridge stretches away to the east.
+              </div>
+              <div>
+                There is a closed door at the end of the platform.
+              </div>
+            </UITest__Exits>,
           ],
         },
         "ref": null,
@@ -161,6 +177,47 @@ ShallowWrapper {
             "rendered": "You feel the weight of the bridges above you.",
             "type": "p",
           },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <div>
+                  A bridge stretches away to the east.
+                </div>,
+                <div>
+                  There is a closed door at the end of the platform.
+                </div>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "A bridge stretches away to the east.",
+                },
+                "ref": null,
+                "rendered": "A bridge stretches away to the east.",
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "There is a closed door at the end of the platform.",
+                },
+                "ref": null,
+                "rendered": "There is a closed door at the end of the platform.",
+                "type": "div",
+              },
+            ],
+            "type": [Function],
+          },
         ],
         "type": [Function],
       },
@@ -169,10 +226,18 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": "A young lady is here. She seems bored.",
+          "children": <Actor />,
         },
         "ref": null,
-        "rendered": "A young lady is here. She seems bored.",
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         "type": [Function],
       },
       Object {
@@ -245,9 +310,17 @@ ShallowWrapper {
             <p>
               You feel the weight of the bridges above you.
             </p>
+            <UITest__Exits>
+              <div>
+                A bridge stretches away to the east.
+              </div>
+              <div>
+                There is a closed door at the end of the platform.
+              </div>
+            </UITest__Exits>
           </UITest__RoomDescription>,
           <UITest__ActionPanel>
-            A young lady is here. She seems bored.
+            <Actor />
           </UITest__ActionPanel>,
           <UITest__StatusBar>
             <p>
@@ -285,6 +358,14 @@ ShallowWrapper {
               <p>
                 You feel the weight of the bridges above you.
               </p>,
+              <UITest__Exits>
+                <div>
+                  A bridge stretches away to the east.
+                </div>
+                <div>
+                  There is a closed door at the end of the platform.
+                </div>
+              </UITest__Exits>,
             ],
           },
           "ref": null,
@@ -369,6 +450,47 @@ ShallowWrapper {
               "rendered": "You feel the weight of the bridges above you.",
               "type": "p",
             },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <div>
+                    A bridge stretches away to the east.
+                  </div>,
+                  <div>
+                    There is a closed door at the end of the platform.
+                  </div>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "A bridge stretches away to the east.",
+                  },
+                  "ref": null,
+                  "rendered": "A bridge stretches away to the east.",
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "There is a closed door at the end of the platform.",
+                  },
+                  "ref": null,
+                  "rendered": "There is a closed door at the end of the platform.",
+                  "type": "div",
+                },
+              ],
+              "type": [Function],
+            },
           ],
           "type": [Function],
         },
@@ -377,10 +499,18 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": "A young lady is here. She seems bored.",
+            "children": <Actor />,
           },
           "ref": null,
-          "rendered": "A young lady is here. She seems bored.",
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           "type": [Function],
         },
         Object {

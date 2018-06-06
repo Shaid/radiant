@@ -1,6 +1,7 @@
 import { injectGlobal } from '.'
 import device from './devices'
 import importFonts from './fonts'
+import palette from './palette'
 
 export default () => {
   injectGlobal`
@@ -19,9 +20,9 @@ export default () => {
 
     body {
       font-family: 'EB Garamond', serif;
-      color: #333;
+      color: ${palette.offBlack};
       font-size: 1rem;
-      background-color: #eee;
+      background-color: ${palette.offWhite};
       display: flex;
       flex-direction: column;
       align-items: flex-start;
