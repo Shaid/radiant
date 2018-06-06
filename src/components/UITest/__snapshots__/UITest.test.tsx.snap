@@ -18,32 +18,37 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <p>
-          Alone, you wait, ready to cross.
-        </p>,
-        <p>
-          On a nearby corner a violin sings; the cadence of its bow dancing in time with the rhythm of your thoughts.
-        </p>,
-        <p>
-          A 
-          <strong>
-            moment of inchoate longing
-          </strong>
-           builds inside you, wishing to step into that oncoming rush and 
-        </p>,
-        <UITest__Quote>
-          allowing it to carry you away to a quieter place,
-        </UITest__Quote>,
-        <p>
-          to that inevitable finality where all music stops (
-          <em>
-            where breath ceases
-          </em>
-          )
-        </p>,
-        <p>
-          the place where I wait for you.
-        </p>,
+        <UITest__RoomDescription>
+          <UITest__AreaName>
+            Villespont, 
+            <em>
+              the City of Bridges
+            </em>
+          </UITest__AreaName>
+          <UITest__RoomName>
+            <strong>
+              Lower Arch Station
+            </strong>
+            , the demilitarised zone
+          </UITest__RoomName>
+          <p>
+            On a nearby corner a violin sings; the cadence of its bow dancing in time with the rhythm of your thoughts.
+          </p>
+          <p>
+            You feel the weight of the bridges above you.
+          </p>
+        </UITest__RoomDescription>,
+        <UITest__ActionPanel>
+          A young lady is here. She seems bored.
+        </UITest__ActionPanel>,
+        <UITest__StatusBar>
+          <p>
+            It is late in the day.
+          </p>
+          <p>
+            You feel oppressed, and hungry.
+          </p>
+        </UITest__StatusBar>,
       ],
     },
     "ref": null,
@@ -51,108 +56,165 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Alone, you wait, ready to cross.",
-        },
-        "ref": null,
-        "rendered": "Alone, you wait, ready to cross.",
-        "type": "p",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "On a nearby corner a violin sings; the cadence of its bow dancing in time with the rhythm of your thoughts.",
-        },
-        "ref": null,
-        "rendered": "On a nearby corner a violin sings; the cadence of its bow dancing in time with the rhythm of your thoughts.",
-        "type": "p",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
+        "nodeType": "class",
         "props": Object {
           "children": Array [
-            "A ",
-            <strong>
-              moment of inchoate longing
-            </strong>,
-            " builds inside you, wishing to step into that oncoming rush and ",
+            <UITest__AreaName>
+              Villespont, 
+              <em>
+                the City of Bridges
+              </em>
+            </UITest__AreaName>,
+            <UITest__RoomName>
+              <strong>
+                Lower Arch Station
+              </strong>
+              , the demilitarised zone
+            </UITest__RoomName>,
+            <p>
+              On a nearby corner a violin sings; the cadence of its bow dancing in time with the rhythm of your thoughts.
+            </p>,
+            <p>
+              You feel the weight of the bridges above you.
+            </p>,
           ],
         },
         "ref": null,
         "rendered": Array [
-          "A ",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                "Villespont, ",
+                <em>
+                  the City of Bridges
+                </em>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Villespont, ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "the City of Bridges",
+                },
+                "ref": null,
+                "rendered": "the City of Bridges",
+                "type": "em",
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <strong>
+                  Lower Arch Station
+                </strong>,
+                ", the demilitarised zone",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Lower Arch Station",
+                },
+                "ref": null,
+                "rendered": "Lower Arch Station",
+                "type": "strong",
+              },
+              ", the demilitarised zone",
+            ],
+            "type": [Function],
+          },
           Object {
             "instance": null,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "moment of inchoate longing",
+              "children": "On a nearby corner a violin sings; the cadence of its bow dancing in time with the rhythm of your thoughts.",
             },
             "ref": null,
-            "rendered": "moment of inchoate longing",
-            "type": "strong",
+            "rendered": "On a nearby corner a violin sings; the cadence of its bow dancing in time with the rhythm of your thoughts.",
+            "type": "p",
           },
-          " builds inside you, wishing to step into that oncoming rush and ",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "You feel the weight of the bridges above you.",
+            },
+            "ref": null,
+            "rendered": "You feel the weight of the bridges above you.",
+            "type": "p",
+          },
         ],
-        "type": "p",
+        "type": [Function],
       },
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": "allowing it to carry you away to a quieter place,",
+          "children": "A young lady is here. She seems bored.",
         },
         "ref": null,
-        "rendered": "allowing it to carry you away to a quieter place,",
+        "rendered": "A young lady is here. She seems bored.",
         "type": [Function],
       },
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "class",
         "props": Object {
           "children": Array [
-            "to that inevitable finality where all music stops (",
-            <em>
-              where breath ceases
-            </em>,
-            ")",
+            <p>
+              It is late in the day.
+            </p>,
+            <p>
+              You feel oppressed, and hungry.
+            </p>,
           ],
         },
         "ref": null,
         "rendered": Array [
-          "to that inevitable finality where all music stops (",
           Object {
             "instance": null,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "where breath ceases",
+              "children": "It is late in the day.",
             },
             "ref": null,
-            "rendered": "where breath ceases",
-            "type": "em",
+            "rendered": "It is late in the day.",
+            "type": "p",
           },
-          ")",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "You feel oppressed, and hungry.",
+            },
+            "ref": null,
+            "rendered": "You feel oppressed, and hungry.",
+            "type": "p",
+          },
         ],
-        "type": "p",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "the place where I wait for you.",
-        },
-        "ref": null,
-        "rendered": "the place where I wait for you.",
-        "type": "p",
+        "type": [Function],
       },
     ],
     "type": [Function],
@@ -164,32 +226,37 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <p>
-            Alone, you wait, ready to cross.
-          </p>,
-          <p>
-            On a nearby corner a violin sings; the cadence of its bow dancing in time with the rhythm of your thoughts.
-          </p>,
-          <p>
-            A 
-            <strong>
-              moment of inchoate longing
-            </strong>
-             builds inside you, wishing to step into that oncoming rush and 
-          </p>,
-          <UITest__Quote>
-            allowing it to carry you away to a quieter place,
-          </UITest__Quote>,
-          <p>
-            to that inevitable finality where all music stops (
-            <em>
-              where breath ceases
-            </em>
-            )
-          </p>,
-          <p>
-            the place where I wait for you.
-          </p>,
+          <UITest__RoomDescription>
+            <UITest__AreaName>
+              Villespont, 
+              <em>
+                the City of Bridges
+              </em>
+            </UITest__AreaName>
+            <UITest__RoomName>
+              <strong>
+                Lower Arch Station
+              </strong>
+              , the demilitarised zone
+            </UITest__RoomName>
+            <p>
+              On a nearby corner a violin sings; the cadence of its bow dancing in time with the rhythm of your thoughts.
+            </p>
+            <p>
+              You feel the weight of the bridges above you.
+            </p>
+          </UITest__RoomDescription>,
+          <UITest__ActionPanel>
+            A young lady is here. She seems bored.
+          </UITest__ActionPanel>,
+          <UITest__StatusBar>
+            <p>
+              It is late in the day.
+            </p>
+            <p>
+              You feel oppressed, and hungry.
+            </p>
+          </UITest__StatusBar>,
         ],
       },
       "ref": null,
@@ -197,108 +264,165 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Alone, you wait, ready to cross.",
-          },
-          "ref": null,
-          "rendered": "Alone, you wait, ready to cross.",
-          "type": "p",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "On a nearby corner a violin sings; the cadence of its bow dancing in time with the rhythm of your thoughts.",
-          },
-          "ref": null,
-          "rendered": "On a nearby corner a violin sings; the cadence of its bow dancing in time with the rhythm of your thoughts.",
-          "type": "p",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
             "children": Array [
-              "A ",
-              <strong>
-                moment of inchoate longing
-              </strong>,
-              " builds inside you, wishing to step into that oncoming rush and ",
+              <UITest__AreaName>
+                Villespont, 
+                <em>
+                  the City of Bridges
+                </em>
+              </UITest__AreaName>,
+              <UITest__RoomName>
+                <strong>
+                  Lower Arch Station
+                </strong>
+                , the demilitarised zone
+              </UITest__RoomName>,
+              <p>
+                On a nearby corner a violin sings; the cadence of its bow dancing in time with the rhythm of your thoughts.
+              </p>,
+              <p>
+                You feel the weight of the bridges above you.
+              </p>,
             ],
           },
           "ref": null,
           "rendered": Array [
-            "A ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  "Villespont, ",
+                  <em>
+                    the City of Bridges
+                  </em>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Villespont, ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "the City of Bridges",
+                  },
+                  "ref": null,
+                  "rendered": "the City of Bridges",
+                  "type": "em",
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <strong>
+                    Lower Arch Station
+                  </strong>,
+                  ", the demilitarised zone",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Lower Arch Station",
+                  },
+                  "ref": null,
+                  "rendered": "Lower Arch Station",
+                  "type": "strong",
+                },
+                ", the demilitarised zone",
+              ],
+              "type": [Function],
+            },
             Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "moment of inchoate longing",
+                "children": "On a nearby corner a violin sings; the cadence of its bow dancing in time with the rhythm of your thoughts.",
               },
               "ref": null,
-              "rendered": "moment of inchoate longing",
-              "type": "strong",
+              "rendered": "On a nearby corner a violin sings; the cadence of its bow dancing in time with the rhythm of your thoughts.",
+              "type": "p",
             },
-            " builds inside you, wishing to step into that oncoming rush and ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "You feel the weight of the bridges above you.",
+              },
+              "ref": null,
+              "rendered": "You feel the weight of the bridges above you.",
+              "type": "p",
+            },
           ],
-          "type": "p",
+          "type": [Function],
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": "allowing it to carry you away to a quieter place,",
+            "children": "A young lady is here. She seems bored.",
           },
           "ref": null,
-          "rendered": "allowing it to carry you away to a quieter place,",
+          "rendered": "A young lady is here. She seems bored.",
           "type": [Function],
         },
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
             "children": Array [
-              "to that inevitable finality where all music stops (",
-              <em>
-                where breath ceases
-              </em>,
-              ")",
+              <p>
+                It is late in the day.
+              </p>,
+              <p>
+                You feel oppressed, and hungry.
+              </p>,
             ],
           },
           "ref": null,
           "rendered": Array [
-            "to that inevitable finality where all music stops (",
             Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "where breath ceases",
+                "children": "It is late in the day.",
               },
               "ref": null,
-              "rendered": "where breath ceases",
-              "type": "em",
+              "rendered": "It is late in the day.",
+              "type": "p",
             },
-            ")",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "You feel oppressed, and hungry.",
+              },
+              "ref": null,
+              "rendered": "You feel oppressed, and hungry.",
+              "type": "p",
+            },
           ],
-          "type": "p",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "the place where I wait for you.",
-          },
-          "ref": null,
-          "rendered": "the place where I wait for you.",
-          "type": "p",
+          "type": [Function],
         },
       ],
       "type": [Function],
