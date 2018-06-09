@@ -16,10 +16,10 @@ const {
 export const theme = {
   alert: palette.red,
   black: palette.black,
-  marineBlue: palette.marineBlue,
   notice: palette.yellow,
-  primaryColour: palette.marineBlue,
+  offBlack: palette.offBlack,
   offWhite: palette.offWhite,
+  primaryColour: palette.offBlack,
 }
 
 export default styled

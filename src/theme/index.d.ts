@@ -1,8 +1,8 @@
 export interface IThemeInterface {
   alert: string
   black: string
-  marineBlue: string
   notice: string
+  offBlack: string
   offWhite: string
   primaryColour: string
 }

@@ -49,6 +49,7 @@
       "allowTaggedTemplates": true
     }],
     "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+    "react/prefer-stateless-function": "warn",
     "typescript/no-unused-vars": "warn", // this is needed for unused vars handling
     "no-param-reassign": ["error", { "props": true, "ignorePropertyModificationsFor": ["self"] }],
     "curly": ["error", "all"]
