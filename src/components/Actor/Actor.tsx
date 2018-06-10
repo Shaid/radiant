@@ -7,7 +7,7 @@ import { IProps, IDefaultProps, IState } from './Actor.d'
 class Actor extends React.PureComponent<IProps, IState> {
   static defaultProps: Partial<IDefaultProps> = {}
 
-  interact() {
+  interact() { // eslint-disable-line
     console.log('interacting with actor')
   }
 

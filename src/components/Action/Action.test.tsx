@@ -5,7 +5,7 @@ import Action from '.'
 
 describe('<Action />', () => {
   it('renders', () => {
-    const wrapper = shallow(<Action />)
+    const wrapper = shallow(<Action onClick={jest.fn} />)
     expect(wrapper).toMatchSnapshot()
   })
 

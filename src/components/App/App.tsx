@@ -10,8 +10,8 @@ const App = styled.div`
 `
 
 @observer
-class AppContainer extends React.PureComponent<IProps> {
-  render() {
+class AppContainer extends React.PureComponent<IProps> { // eslint-disable-line
+  render() { // eslint-disable-line
     // const store = this.props.store
     return (
       <ThemeProvider theme={theme}>

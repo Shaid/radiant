@@ -3,7 +3,7 @@ const ENGINE_TICK_INTERVAL = 1000
 let timer: any
 
 class MainLoop {
-  tick() {
+  tick() { // eslint-disable-line
     console.log('tick')
   }
 
@@ -11,7 +11,7 @@ class MainLoop {
     timer = setInterval(this.tick, ENGINE_TICK_INTERVAL)
   }
 
-  stop() {
+  stop() { // eslint-disable-line
     clearInterval(timer)
   }
 }

@@ -36,10 +36,10 @@ const Exits = styled.nav`
   font-size: 1rem;
 `
 
-class UITest extends React.PureComponent<IProps, IState> {
+class UITest extends React.PureComponent<IProps, IState> { // eslint-disable-line
   static defaultProps: Partial<IDefaultProps> = {}
 
-  render() {
+  render() { // eslint-disable-line
     // const {} = this.props as PropsWithDefaults
     return (
       <UIContainer>
