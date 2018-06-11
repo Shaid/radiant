@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "name": "Villespont",
+    "shortTitle": "the City of Bridges",
+    "sectors": {
+      "id": "1",
+      "name": "the demilitarised zone"
+    }
+  },
+  {
+    "id": "2",
+    "name": "Belenoth",
+    "shortTitle": "the wilderness",
+    "sectors": [
+      {
+        "id": "1",
+        "name": "a verdant plain"
+      },
+      {
+        "id": "2",
+        "name": "the Old Woods"
+      }
+    ]
+  }
+]
