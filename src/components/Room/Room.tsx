@@ -1,25 +1,16 @@
 import React from 'react'
+
 import styled from 'theme'
 
-import Actor from 'components/Actor'
+import { IProps, IDefaultProps, IState } from './Room.d'
 
-import { IProps, IDefaultProps, IState } from './UITest.d'
-
-const UIContainer = styled.div`
+const Room = styled.div`
   display: flex;
-  flex-flow: column nowrap;
-  height: 100vh;
+  flex: 1 1 auto;
 `
+
 const RoomDescription = styled.div`
-  margin: 2rem;
-`
-
-const ActionPanel = styled.div`
-  margin: 2rem;
-`
-
-const StatusBar = styled.div`
-  margin: auto 2rem 2rem 2rem;
+  flex: 1 1 auto;
 `
 
 const AreaName = styled.blockquote`
@@ -36,13 +27,12 @@ const Exits = styled.nav`
   font-size: 1rem;
 `
 
-class UITest extends React.PureComponent<IProps, IState> {
+export default class extends React.PureComponent<IProps, IState> { // eslint-disable-line react/prefer-stateless-function
   static defaultProps: Partial<IDefaultProps> = {}
 
-  render() {
-    // const {} = this.props as PropsWithDefaults
+  render() { // eslint-disable-line class-methods-use-this
     return (
-      <UIContainer>
+      <Room>
         <RoomDescription>
           <AreaName>Villespont, <em>the City of Bridges</em></AreaName>
           <RoomName><strong>Lower Arch Station</strong>, the demilitarised zone</RoomName>
@@ -53,16 +43,7 @@ class UITest extends React.PureComponent<IProps, IState> {
             <div>There is a closed door at the end of the platform.</div>
           </Exits>
         </RoomDescription>
-        <ActionPanel>
-          <Actor />
-        </ActionPanel>
-        <StatusBar>
-          <p>It is late in the day.</p>
-          <p>You feel oppressed, and hungry.</p>
-        </StatusBar>
-      </UIContainer>
+      </Room>
     )
   }
 }
-
-export default UITest

@@ -1,5 +1,4 @@
 import { injectGlobal } from '.'
-import device from './devices'
 import importFonts from './fonts'
 import palette from './palette'
 
@@ -9,7 +8,11 @@ export default () => {
 
     html {
       box-sizing: border-box;
-      font-size: 20px;
+      font-size: 18px;
+      width: 100vw;
+      height: 90vh;
+      overflow: hidden;
+      display: flex;
     }
 
     *,
@@ -20,59 +23,27 @@ export default () => {
 
     body {
       font-family: 'EB Garamond', serif;
+      font-variant-ligatures: contextual;
       color: ${palette.offBlack};
       font-size: 1rem;
       background-color: ${palette.offWhite};
       display: flex;
+      flex: 1 1 auto;
       flex-direction: column;
       align-items: flex-start;
       margin: 0;
     }
 
     #root {
-      width: 100vw;
+      display: flex;
+      flex: 1 1 auto;
+      font-size: 1rem;
     }
 
-    /*
-    @media ${device.tabletPortrait} {
-      body {
-        align-items: center;
-      }
-
-      #root {
-        width: 768px;
+    @media all and (orientation: landscape) {
+      html {
+        font-size: 20px;
       }
     }
-
-    @media ${device.tabletLandscape} {
-      #root {
-        width: 960px;
-      }
-    }
-
-    @media ${device.desktopSmall} {
-      #root {
-        width: 1024px;
-      }
-    }
-
-    @media ${device.desktopMedium} {
-      #root {
-        width: 1280px;
-      }
-    }
-
-    @media ${device.desktopLarge} {
-      #root {
-        width: 1440px;
-      }
-    }
-
-    @media ${device.desktopExtraLarge} {
-      #root {
-        width: 1600px;
-      }
-    }
-    */
   `
 }

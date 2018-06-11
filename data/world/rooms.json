@@ -1,0 +1,65 @@
+[
+  {
+    "id": "1",
+    "name": "Lower Arch Station",
+    "zone": "1",
+    "sector": "1",
+    "description": [
+      "On a nearby corner a violin sings; the cadence of its bow dancing in time with the rhythm of your thoughts.",
+      "You feel the weight of the bridges above you."
+    ],
+    "exits": [
+      {
+        "id": "1",
+        "description":[
+          "A bridge stretches away to the east."
+        ],
+        "destination": "2"
+      },
+      {
+        "id": "2",
+        "description":[
+          "There is a door at the end of the platform."
+        ],
+        "destination": "3"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "The Bridge of Sighs",
+    "zone": "1",
+    "sector": "1",
+    "description": [
+      "You stand on the Bridge of Sighs. A wind blows from below, and it sings as it passes through the latticework of the bridge.",
+      "You feel the weight of the bridges above you."
+    ],
+    "exits": [
+      {
+        "id": "1",
+        "description":[
+          "A bridge stretches away to the west."
+        ],
+        "destination": "1"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "A closed door",
+    "zone": "1",
+    "sector": "1",
+    "description": [
+      "You stand in front of a closed door. It is made of some kind of hardwood. It looks sturdy."
+    ],
+    "exits": [
+      {
+        "id": "1",
+        "description":[
+          "Lower Arch Station is behind you."
+        ],
+        "destination": "1"
+      }
+    ]
+  }
+]

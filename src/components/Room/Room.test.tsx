@@ -1,13 +1,13 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import UITest from '.'
+import Room from '.'
 
-describe('<UITest />', () => {
+describe('<Room />', () => {
   it('renders', () => {
-    const wrapper = shallow(<UITest />)
+    const wrapper = shallow(<Room />)
     expect(wrapper).toMatchSnapshot()
   })
 
-  it('TODO: tests for UITest')
+  it('TODO: tests for Room')
 })

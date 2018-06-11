@@ -1,5 +1,5 @@
 const importFonts = () => `
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,600,600i');
 `
 
 /*

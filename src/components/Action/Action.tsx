@@ -4,26 +4,28 @@ import styled, { theme } from 'theme'
 
 import { IProps, IDefaultProps, IState } from './Action.d'
 
-const ActionButton = styled.button`
+const Action = styled.button`
+  display: flex;
+  flex: 1 1 auto;
+  color: ${theme.primaryColour};
   background: transparent;
   border: none;
   font-family: 'EB Garamond', serif;
   font-size: 1rem;
   cursor: pointer;
-  color: ${theme.primaryColour};
+  text-decoration: underline solid #bbb;
 `
 
-class Action extends React.PureComponent<IProps, IState> {
+export default class extends React.PureComponent<IProps, IState> {
   static defaultProps: Partial<IDefaultProps> = {}
 
   render() {
     const { children, onClick } = this.props
+
     return (
-      <ActionButton onClick={() => onClick()}>
+      <Action onClick={() => onClick()}>
         {children}
-      </ActionButton>
+      </Action>
     )
   }
 }
-
-export default Action
