@@ -23,6 +23,7 @@ export default () => {
 
     body {
       font-family: 'EB Garamond', serif;
+      font-variant-ligatures: contextual;
       color: ${palette.offBlack};
       font-size: 1rem;
       background-color: ${palette.offWhite};
