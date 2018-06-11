@@ -9,5 +9,11 @@ describe('<Action />', () => {
     expect(wrapper).toMatchSnapshot()
   })
 
-  it('TODO: tests for Action')
+  it('triggers its action when clicked', () => {
+    const click = jest.fn()
+
+    const wrapper = shallow(<Action onClick={click} />)
+    wrapper.simulate('click')
+    expect(click).toHaveBeenCalled()
+  })
 })

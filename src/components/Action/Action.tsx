@@ -10,7 +10,7 @@ const ActionButton = styled.button`
   font-family: 'EB Garamond', serif;
   font-size: 1rem;
   cursor: pointer;
-  text-decoration: underline dotted #aaa;
+  text-decoration: underline solid #bbb;
   color: ${theme.primaryColour};
 `
 

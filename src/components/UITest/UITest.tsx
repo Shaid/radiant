@@ -8,18 +8,24 @@ import { IProps, IDefaultProps, IState } from './UITest.d'
 const UIContainer = styled.div`
   display: flex;
   flex-flow: column nowrap;
-  height: 100vh;
+  margin: 1rem;
+  height: 100%;
+
+  @media all and (orientation: landscape) {
+    margin: 2rem;
+  }
 `
 const RoomDescription = styled.div`
-  margin: 2rem;
+  flex: 1 1 auto;
 `
 
 const ActionPanel = styled.div`
-  margin: 2rem;
+  flex: 1 1 auto;
 `
 
 const StatusBar = styled.div`
-  margin: auto 2rem 2rem 2rem;
+  flex: 0 1 15%;
+  margin-top: auto;
 `
 
 const AreaName = styled.blockquote`
