@@ -2,7 +2,7 @@ export interface IState {
 }
 
 export interface IProps {
-  children?: string
+  children?: string[] | undefined
   onClick: Function
 }
 

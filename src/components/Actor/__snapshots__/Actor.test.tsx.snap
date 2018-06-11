@@ -20,7 +20,8 @@ ShallowWrapper {
       "children": <_default
         onClick={[Function]}
       >
-        A young lady is here. She seems bored.
+        A middle-aged woman
+         is here.
       </_default>,
     },
     "ref": null,
@@ -29,11 +30,17 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": "A young lady is here. She seems bored.",
+        "children": Array [
+          "A middle-aged woman",
+          " is here.",
+        ],
         "onClick": [Function],
       },
       "ref": null,
-      "rendered": "A young lady is here. She seems bored.",
+      "rendered": Array [
+        "A middle-aged woman",
+        " is here.",
+      ],
       "type": [Function],
     },
     "type": [Function],
@@ -47,7 +54,8 @@ ShallowWrapper {
         "children": <_default
           onClick={[Function]}
         >
-          A young lady is here. She seems bored.
+          A middle-aged woman
+           is here.
         </_default>,
       },
       "ref": null,
@@ -56,11 +64,17 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": "A young lady is here. She seems bored.",
+          "children": Array [
+            "A middle-aged woman",
+            " is here.",
+          ],
           "onClick": [Function],
         },
         "ref": null,
-        "rendered": "A young lady is here. She seems bored.",
+        "rendered": Array [
+          "A middle-aged woman",
+          " is here.",
+        ],
         "type": [Function],
       },
       "type": [Function],

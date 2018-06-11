@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1",
+    "name": "Samantha",
+    "age": "32",
+    "gender": "female",
+    "appearance": {
+      "eyes": "green",
+      "hair": {
+        "colour": "brown",
+        "length": "shoulder-length"
+      }
+    },
+    "status": "bored",
+    "idleActions": [
+      "coughs",
+      "rolls her eyes",
+      "sighs"
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Yasmin",
+    "age": "45",
+    "gender": "female",
+    "appearance": {
+      "eyes": "brown",
+      "hair": {
+        "colour": "black",
+        "length": "long"
+      }
+    },
+    "status": "excited",
+    "idleActions": [
+      "smiles",
+      "bounces with excitement"
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Jez",
+    "age": "37",
+    "gender": "male",
+    "appearance": {
+      "eyes": "grey",
+      "hair": {
+        "colour": "brown",
+        "length": "long",
+        "style": "high ponytail"
+      }
+    },
+    "status": "depressed",
+    "idleActions": [
+      "sighs",
+      "rolls his eyes"
+    ]
+  }
+]

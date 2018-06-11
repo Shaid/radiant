@@ -1,4 +1,5 @@
 export interface IState {
+  actor: any
 }
 
 export interface IProps {
