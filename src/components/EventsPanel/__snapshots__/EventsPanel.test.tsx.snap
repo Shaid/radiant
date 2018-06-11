@@ -1,12 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Action /> renders 1`] = `
+exports[`<EventsPanel /> renders 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <_default
-    onClick={[Function]}
-  />,
+  Symbol(enzyme.__unrendered__): <_default />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -20,7 +18,6 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": undefined,
-      "onClick": [Function],
     },
     "ref": null,
     "rendered": null,
@@ -33,7 +30,6 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": undefined,
-        "onClick": [Function],
       },
       "ref": null,
       "rendered": null,
