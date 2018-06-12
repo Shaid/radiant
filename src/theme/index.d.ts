@@ -5,6 +5,7 @@ export interface IThemeInterface {
   offBlack: string
   offWhite: string
   primaryColour: string
+  primaryBackground: string
 }
 
 export interface IStyledProps {

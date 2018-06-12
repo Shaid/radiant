@@ -20,7 +20,8 @@ export const theme = {
   offBlack: palette.offBlack,
   offWhite: palette.offWhite,
   primaryColour: palette.offBlack,
+  primaryBackground: palette.offWhite,
 }
 
 export default styled
-export { css, injectGlobal, keyframes, withTheme, ThemeProvider }
+export { css, keyframes, injectGlobal, withTheme, ThemeProvider }

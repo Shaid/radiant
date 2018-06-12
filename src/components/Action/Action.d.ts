@@ -1,4 +1,5 @@
 export interface IState {
+  active: boolean
 }
 
 export interface IProps {
