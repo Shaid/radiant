@@ -3,11 +3,11 @@
     ["babel-plugin-styled-components", {
       "displayName": true
     }],
-    "transform-decorators-legacy",
     "transform-class-properties",
     "transform-export-extensions",
     "@babel/plugin-proposal-export-default-from",
-    "@babel/plugin-proposal-optional-chaining"
+    "@babel/plugin-proposal-optional-chaining",
+    ["@babel/plugin-proposal-decorators", { "legacy": true }]
   ],
   "presets": [
     [

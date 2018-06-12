@@ -60,6 +60,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.0.0-beta.44",
+    "@babel/plugin-proposal-decorators": "^7.0.0-beta.48",
     "@babel/plugin-proposal-export-default-from": "^7.0.0-beta.44",
     "@babel/plugin-proposal-optional-chaining": "^7.0.0-beta.44",
     "@babel/preset-typescript": "^7.0.0-beta.44",
@@ -83,6 +84,7 @@
     "dotenv-expand": "4.2.0",
     "eslint": "4.15.0",
     "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-bom": "^0.3.0",
     "eslint-loader": "1.9.0",
     "eslint-plugin-import": "2.8.0",
     "eslint-plugin-jsx-a11y": "^5.1.0",
