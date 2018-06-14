@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'theme'
 
 import Action from 'components/Action'
+import { IAction } from 'components/Action/Action.d'
 import { IProps, IDefaultProps, IState } from './Actor.d'
 
 const Actor = styled.div`
@@ -48,9 +49,16 @@ export default class extends React.PureComponent<IProps, IState> {
 
   render() {
     // const {} = this.props as PropsWithDefaults
+
+    const actions:Array<IAction> = [
+      { label: 'talk to', callback: () => { console.log(`action: talk to ${this.state.actor.name}`) } },
+      { label: 'look at', callback: () => { console.log(`action: look at ${this.state.actor.name}`) } },
+      { label: 'push', callback: () => { console.log(`action: push ${this.state.actor.name}`) } },
+    ]
+
     return (
       <Actor>
-        <Action onClick={() => this.interact()}>
+        <Action onClick={() => this.interact()} actions={actions}>
           {getActorDescription(this.state.actor)} is here.
         </Action>
       </Actor>
