@@ -19,7 +19,7 @@ const Action = styled.button`
   cursor: pointer;
   position: relative;
   text-decoration: underline solid #bbb;
-  ${(props: StyledProps) => (props.active ? `box-shadow: inset 0 0 500px 500px ${theme.primaryBackground}, 0 0 500px 500px ${theme.primaryBackground}` : '')};
+  ${(props: StyledProps) => (props.active ? `box-shadow: inset 0 0 0 0 ${theme.primaryBackground}, 0 0 25vh 25vh ${theme.primaryBackground}` : '')};
   transition: box-shadow 0.2s ease-in-out;
 
   :focus {
