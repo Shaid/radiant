@@ -38,7 +38,7 @@ const Button = styled.button`
   flex: 1 1 auto;
   position: relative;
   ${applyButtonStyle()}
-  ${(props: IButtonStyled) => (props.active ? `box-shadow: inset 0 0 0 0 ${theme.primaryBackground}, 0 0 25vh 25vh ${theme.primaryBackground}` : '')};
+  ${(props: IButtonStyled) => (props.active ? `z-index: 500; box-shadow: inset 0 0 0 0 ${theme.primaryBackground}, 0 0 25vh 25vh ${theme.primaryBackground}` : '')};
   transition: box-shadow 0.2s ease-in-out;
 `
 
@@ -91,6 +91,7 @@ const ActionsList = styled.div`
   border-radius: 50%;
   list-style: none;
   transition: opacity 0.2s ease-in-out;
+  ${(props: IActionsStyled) => (props.active ? 'z-index: 500;' : '')}
   ${(props: IActionsStyled) => positionOnCircle(props.count, props.radius, props.itemSize, props.active)}
 `
 
