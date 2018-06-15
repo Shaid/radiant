@@ -14,7 +14,8 @@
     "noUnusedLocals": true,
     "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
-    "target": "es5"
+    "target": "es5",
+    "keyofStringsOnly": true
   },
   "exclude": [
     "node_modules",
