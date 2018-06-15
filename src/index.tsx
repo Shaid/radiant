@@ -12,6 +12,8 @@ import { initialiseAppStore } from 'stores/AppStore'
 
 import injectGlobalStyles from 'theme/globalStyles'
 
+require('intersection-observer')
+
 injectGlobalStyles()
 
 // MobX 4+ 'useStrict'
