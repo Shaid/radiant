@@ -48,13 +48,16 @@ const Button = styled.button`
 `
 
 const positionItems = (count: number, active: boolean) => {
-  const radius = 1.5
   let positions = ''
 
   for (let i = 1; i <= count; i++) {
     positions += `
     &:nth-of-type(${i}) {
-      transform: translateY(${active ? radius * i : 0}rem)
+      transform: translateY(${active ? 2.0 * i : 0}rem);
+
+      @media all and (orientation: landscape) {
+        transform: translateY(${active ? 1.25 * i : 0}rem);
+      }
     }
     `
   }
@@ -66,7 +69,7 @@ const positionItems = (count: number, active: boolean) => {
     cursor: ${active ? 'pointer' : 'default'};
     position: absolute;
     min-width: 100px;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-variant: small-caps;
     text-decoration: none;
     transition: transform 0.2s ease-in;
@@ -80,7 +83,7 @@ const positionItems = (count: number, active: boolean) => {
     }
 
     @media all and (orientation: landscape) {
-      font-size: 1.0rem;
+      font-size: 1.1rem;
     }
   }`
 }
@@ -125,7 +128,6 @@ export default class extends React.PureComponent<IProps, IState> {
       document.removeEventListener('click', this.setInactive, false)
     }
 
-    /*
     // add observer to check if offscreen.
     const ioOptions = {
       root: null,
@@ -135,18 +137,14 @@ export default class extends React.PureComponent<IProps, IState> {
     const intersectionObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (!entry.isIntersecting || entry.intersectionRatio < 1) {
-          // const el = entry.target.parentElement
+          const el:any = entry.target
           // const elStyle = window.getComputedStyle(el!)
-          // const x = 10 - Math.min(0, entry.boundingClientRect.left, entry.boundingClientRect.right)
-          // const y = 10 - Math.min(0, entry.boundingClientRect.top, entry.boundingClientRect.bottom)
-          // console.log(parseInt(el!.style.left, 10), entry, `${parseInt(el!.style.left, 10) + (-x)}px`, `${el!.style.top + (-y)}px`)
-          const {
-            left, top
-          } = entry.target.getBoundingClientRect()
+          const x = Math.min(0, entry.boundingClientRect.left, entry.boundingClientRect.right)
+          const y = Math.min(0, entry.boundingClientRect.top, entry.boundingClientRect.bottom)
 
-          console.log(entry, left, top, entry.target.getBoundingClientRect())
-          // if (left < 0) { el!.style.left = '100px' }
-          // if (top < 0) { el!.style.top = '100px' }
+          console.log(x, y, el, entry, entry.target.getBoundingClientRect())
+          if (x < 0) { console.log(`left ${-x}`); el.style.left = `${-x}px` }
+          if (y < 0) { el.style.top = `${-y}px` }
         }
       })
     }, ioOptions)
@@ -154,7 +152,6 @@ export default class extends React.PureComponent<IProps, IState> {
     Array.from(this.actionsRef.current.children).forEach((child: Element) => {
       intersectionObserver.observe(child)
     })
-    */
 
     this.setState({
       active
@@ -193,10 +190,10 @@ export default class extends React.PureComponent<IProps, IState> {
           }}
         >
           {children}
-          <ActionsList innerRef={this.actionsRef} count={actionList.length} radius={250} itemSize={150} active={active} >
-            {actionList}
-          </ActionsList>
         </Button>
+        <ActionsList innerRef={this.actionsRef} count={actionList.length} radius={250} itemSize={150} active={active} >
+          {actionList}
+        </ActionsList>
       </Action>
     )
   }
