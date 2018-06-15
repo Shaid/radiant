@@ -6,7 +6,9 @@ import { IAction } from 'components/Action/Action.d'
 import { IProps, IDefaultProps, IState } from './Actor.d'
 
 const Actor = styled.div`
-  flex: 1 1 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0.5rem 0;
 `
 
 const actors = require('data/actors/actors.json')
@@ -28,7 +30,10 @@ const getActorDescription = (actor: any) => {
 
   const gender = actor.gender === 'female' ? 'woman' : 'man'
 
-  return `A ${age} ${gender}`
+  if ((Math.random() * 2) > 1) {
+    return `A ${age} ${gender}`
+  }
+  return actor.name
 }
 
 
@@ -52,15 +57,14 @@ export default class extends React.PureComponent<IProps, IState> {
 
     const actions:Array<IAction> = [
       { label: 'talk to', callback: () => { console.log(`action: talk to ${this.state.actor.name}`) } },
-      { label: 'look at', callback: () => { console.log(`action: look at ${this.state.actor.name}`) } },
-      { label: 'push', callback: () => { console.log(`action: push ${this.state.actor.name}`) } },
+      { label: 'inspect', callback: () => { console.log(`action: look at ${this.state.actor.name}`) } },
     ]
 
     return (
       <Actor>
         <Action onClick={() => this.interact()} actions={actions}>
-          {getActorDescription(this.state.actor)} is here.
-        </Action>
+          {getActorDescription(this.state.actor)}
+        </Action>&nbsp;is here.
       </Actor>
     )
   }
