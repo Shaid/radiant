@@ -42,7 +42,6 @@ const Button = styled.button`
   position: relative;
   ${applyButtonStyle()}
   ${(props: IButtonStyled) => (props.active ? `z-index: 500; box-shadow: inset 0 0 0 0 ${theme.primaryBackground}, 0 15vh 25vh 25vh ${theme.primaryBackground}; border-radius: 5vh;` : '')}
-  // transition: box-shadow 0.2s ease-out;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
