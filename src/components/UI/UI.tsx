@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'theme'
 
-import Actor from 'components/Actor'
 import EventsPanel from 'components/EventsPanel'
 import Room from 'components/Room'
 import StatusPanel from 'components/StatusPanel'
@@ -44,9 +43,7 @@ export default class extends React.PureComponent<IProps, IState> { // eslint-dis
     return (
       <UI>
         <Room />
-        <EventsPanel>
-          <Actor />
-        </EventsPanel>
+        <EventsPanel />
         <StatusPanel />
       </UI>
     )

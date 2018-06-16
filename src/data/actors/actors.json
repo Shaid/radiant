@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "name": "Samantha",
+    "name": "Katarina",
     "age": "32",
     "gender": "female",
     "appearance": {
@@ -20,7 +20,7 @@
   },
   {
     "id": "2",
-    "name": "Yasmin",
+    "name": "Selene",
     "age": "45",
     "gender": "female",
     "appearance": {
@@ -38,7 +38,7 @@
   },
   {
     "id": "3",
-    "name": "Jez",
+    "name": "Ragnar",
     "age": "37",
     "gender": "male",
     "appearance": {

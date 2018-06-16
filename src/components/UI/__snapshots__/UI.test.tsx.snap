@@ -19,9 +19,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <_default />,
-        <_default>
-          <_default />
-        </_default>,
+        <_default />,
         <_default />,
       ],
     },
@@ -40,19 +38,9 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
-        "props": Object {
-          "children": <_default />,
-        },
+        "props": Object {},
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
+        "rendered": null,
         "type": [Function],
       },
       Object {
@@ -75,9 +63,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <_default />,
-          <_default>
-            <_default />
-          </_default>,
+          <_default />,
           <_default />,
         ],
       },
@@ -96,19 +82,9 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
-          "props": Object {
-            "children": <_default />,
-          },
+          "props": Object {},
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
+          "rendered": null,
           "type": [Function],
         },
         Object {

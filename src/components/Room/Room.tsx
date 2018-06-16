@@ -2,6 +2,8 @@ import React from 'react'
 
 import styled from 'theme'
 
+import Actor from 'components/Actor'
+import Exits from './Exits'
 import { IProps, IDefaultProps, IState } from './Room.d'
 
 const Room = styled.div`
@@ -23,25 +25,49 @@ const RoomName = styled.blockquote`
   margin: 1rem 0;
 `
 
-const Exits = styled.nav`
-  font-size: 1rem;
+const Actors = styled.div`
+  flex: 1 1 auto;
+  margin: 1rem 0;
 `
+
+
+const rooms = require('data/world/rooms.json')
+const zones = require('data/world/zones.json')
+
 
 export default class extends React.PureComponent<IProps, IState> { // eslint-disable-line react/prefer-stateless-function
   static defaultProps: Partial<IDefaultProps> = {}
 
+  constructor(props: IProps) {
+    super(props)
+
+    this.state = {
+      currentRoom: 0
+    }
+  }
+
+  travelTo = (destination: number) => {
+    this.setState({
+      currentRoom: destination
+    })
+  }
+
   render() { // eslint-disable-line class-methods-use-this
+    const room = rooms[this.state.currentRoom]
+    const zone = zones[room.zone]
+    const sector = zone.sectors[room.sector]
+
     return (
       <Room>
         <RoomDescription>
-          <AreaName>Villespont, <em>the City of Bridges</em></AreaName>
-          <RoomName><strong>Lower Arch Station</strong>, the demilitarised zone</RoomName>
-          <p>On a nearby corner a violin sings; the cadence of its bow dancing in time with the rhythm of your thoughts.</p>
-          <p>You feel the weight of the bridges above you.</p>
-          <Exits>
-            <div>A bridge stretches away to the east.</div>
-            <div>There is a closed door at the end of the platform.</div>
-          </Exits>
+          <AreaName>{zone.name}, <em>{zone.shortTitle}</em></AreaName>
+          <RoomName><strong>{room.name}</strong>, {sector.name}</RoomName>
+          {room.description.map((paragraph: string) => (<p key={paragraph}>{paragraph}</p>))}
+          <Exits action={this.travelTo} exits={room.exits} />
+          <Actors>
+            <Actor />
+            <Actor />
+          </Actors>
         </RoomDescription>
       </Room>
     )
