@@ -32,8 +32,6 @@ ShallowWrapper {
               "current": null,
             }
           }
-          itemSize={150}
-          radius={250}
         />,
       ],
     },
@@ -63,8 +61,6 @@ ShallowWrapper {
           "innerRef": Object {
             "current": null,
           },
-          "itemSize": 150,
-          "radius": 250,
         },
         "ref": null,
         "rendered": Array [],
@@ -92,8 +88,6 @@ ShallowWrapper {
                 "current": null,
               }
             }
-            itemSize={150}
-            radius={250}
           />,
         ],
       },
@@ -123,8 +117,6 @@ ShallowWrapper {
             "innerRef": Object {
               "current": null,
             },
-            "itemSize": 150,
-            "radius": 250,
           },
           "ref": null,
           "rendered": Array [],

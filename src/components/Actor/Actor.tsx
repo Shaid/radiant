@@ -48,10 +48,6 @@ export default class extends React.PureComponent<IProps, IState> {
     }
   }
 
-  interact() {
-    console.log(`interacting with actor: ${this.state.actor.name}`)
-  }
-
   render() {
     // const {} = this.props as PropsWithDefaults
 
