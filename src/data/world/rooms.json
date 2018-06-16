@@ -116,7 +116,8 @@
       {
         "id": "1",
         "description":[
-          "Some spooky looking woods are to the south."
+          "Some spooky looking woods are to the south.",
+          "What happens now?"
         ],
         "destination": "5"
       }
@@ -124,11 +125,12 @@
   },
   {
     "id": "5",
-    "name": "Underneath some trees",
+    "name": "Underneath the capony",
     "zone": "1",
     "sector": "1",
     "description": [
       "You are in a well-forrested area. Ancient trees grow all around you.",
+      "Dappled light filters through the canopy above you. It's really quite pleasant here. You don't know why you thought the woods were spooky.",
       "There's a small stream trickling by."
     ],
     "exits": [

@@ -20,9 +20,7 @@ export default class extends React.PureComponent<IProps, IState> { // eslint-dis
 
     const exitActions = exits.map((exit: IExit) => (
       <Exit key={exit.id}>
-        <Action
-          onClick={() => this.props.action(exit.destination)}
-        >
+        <Action onClick={() => this.props.action(exit.destination)}>
           {exit.description}
         </Action>
       </Exit>
