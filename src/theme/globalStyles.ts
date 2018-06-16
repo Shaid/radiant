@@ -14,6 +14,11 @@ export default () => {
       display: flex;
     }
 
+    * {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
     *,
     *::before,
     *::after {

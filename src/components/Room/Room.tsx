@@ -30,10 +30,9 @@ const Actors = styled.div`
   margin: 1rem 0;
 `
 
-
+// @todo Make room and it's travelTo() call use external props and state. Room should be from a store, etc.
 const rooms = require('data/world/rooms.json')
 const zones = require('data/world/zones.json')
-
 
 export default class extends React.PureComponent<IProps, IState> { // eslint-disable-line react/prefer-stateless-function
   static defaultProps: Partial<IDefaultProps> = {}

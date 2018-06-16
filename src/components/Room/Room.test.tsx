@@ -8,6 +8,4 @@ describe('<Room />', () => {
     const wrapper = shallow(<Room />)
     expect(wrapper).toMatchSnapshot()
   })
-
-  it('TODO: tests for Room')
 })

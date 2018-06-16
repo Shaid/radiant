@@ -1,5 +1,4 @@
-[
-  {
+[{
     "id": "0",
     "name": "Lower Arch Station",
     "zone": "0",
@@ -8,17 +7,16 @@
       "On a nearby corner a violin sings; the cadence of its bow dancing in time with the rhythm of your thoughts.",
       "You feel the weight of the bridges above you."
     ],
-    "exits": [
-      {
+    "exits": [{
         "id": "0",
-        "description":[
+        "description": [
           "A bridge stretches away to the east."
         ],
         "destination": "1"
       },
       {
         "id": "1",
-        "description":[
+        "description": [
           "There is a door at the end of the platform."
         ],
         "destination": "2"
@@ -34,17 +32,16 @@
       "You stand on the Bridge of Sighs. A wind blows from below, and it sings as it passes through the latticework of the bridge.",
       "You feel the weight of the bridges above you."
     ],
-    "exits": [
-      {
+    "exits": [{
         "id": "1",
-        "description":[
+        "description": [
           "The lower city gate is at the end of the bridge."
         ],
         "destination": "3"
       },
       {
         "id": "0",
-        "description":[
+        "description": [
           "A bridge stretches away to the west."
         ],
         "destination": "0"
@@ -60,15 +57,13 @@
       "You stand in front of a closed door. It is made of some kind of hardwood. It looks sturdy.",
       "It's also quite locked. You don't think you can open it."
     ],
-    "exits": [
-      {
-        "id": "0",
-        "description":[
-          "Lower Arch Station is behind you."
-        ],
-        "destination": "0"
-      }
-    ]
+    "exits": [{
+      "id": "0",
+      "description": [
+        "Lower Arch Station is behind you."
+      ],
+      "destination": "0"
+    }]
   },
   {
     "id": "3",
@@ -79,17 +74,16 @@
       "\"BEHOLD\", shouts a guard, \"the grand city of Villespont!\".",
       "You stand before the city gate."
     ],
-    "exits": [
-      {
+    "exits": [{
         "id": "0",
-        "description":[
+        "description": [
           "Proceed into the city."
         ],
         "destination": "1"
       },
       {
         "id": "1",
-        "description":[
+        "description": [
           "Venture out into the wilderness beyond the gate."
         ],
         "destination": "4"
@@ -105,19 +99,17 @@
       "You are on a desterted gravel road.",
       "It seems well-made and well-travelled."
     ],
-    "exits": [
-      {
+    "exits": [{
         "id": "0",
-        "description":[
+        "description": [
           "A large city lies ahead."
         ],
         "destination": "3"
       },
       {
         "id": "1",
-        "description":[
-          "Some spooky looking woods are to the south.",
-          "What happens now?"
+        "description": [
+          "Some spooky looking woods are to the south."
         ],
         "destination": "5"
       }
@@ -125,22 +117,20 @@
   },
   {
     "id": "5",
-    "name": "Underneath the capony",
+    "name": "A dappled glade",
     "zone": "1",
     "sector": "1",
     "description": [
       "You are in a well-forrested area. Ancient trees grow all around you.",
-      "Dappled light filters through the canopy above you. It's really quite pleasant here. You don't know why you thought the woods were spooky.",
-      "There's a small stream trickling by."
+      "Dappled light filters through the canopy above you. It is really quite pleasant here. You don't know why you thought the woods were spooky.",
+      "There is a small stream trickling by, near your feet."
     ],
-    "exits": [
-      {
-        "id": "0",
-        "description":[
-          "A small path leads out into light."
-        ],
-        "destination": "4"
-      }
-    ]
+    "exits": [{
+      "id": "0",
+      "description": [
+        "A small path leads back out into daylight."
+      ],
+      "destination": "4"
+    }]
   }
 ]

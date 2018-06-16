@@ -20,7 +20,6 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": <Action__Button
-        active={false}
         onClick={[Function]}
       />,
     },
@@ -30,7 +29,6 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "active": false,
         "children": undefined,
         "onClick": [Function],
       },
@@ -47,7 +45,6 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": <Action__Button
-          active={false}
           onClick={[Function]}
         />,
       },
@@ -57,7 +54,6 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "active": false,
           "children": undefined,
           "onClick": [Function],
         },
