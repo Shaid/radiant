@@ -3,8 +3,8 @@ export interface IState {
 }
 
 export interface IProps {
-  children?: string[] | string | undefined
-  onClick: Function
+  actions: Array<IAction>
+  children?: string[] | undefined
 }
 
 export interface IAction {

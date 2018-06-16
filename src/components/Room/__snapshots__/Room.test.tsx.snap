@@ -4,7 +4,7 @@ exports[`<Room /> renders 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <_class />,
+  Symbol(enzyme.__unrendered__): <_default />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -19,7 +19,8 @@ ShallowWrapper {
     "props": Object {
       "children": <Room__RoomDescription>
         <Room__AreaName>
-          Villespont, 
+          Villespont
+          , 
           <em>
             the City of Bridges
           </em>
@@ -28,7 +29,8 @@ ShallowWrapper {
           <strong>
             Lower Arch Station
           </strong>
-          , the demilitarised zone
+          , 
+          the demilitarised zone
         </Room__RoomName>
         <p>
           On a nearby corner a violin sings; the cadence of its bow dancing in time with the rhythm of your thoughts.
@@ -36,14 +38,31 @@ ShallowWrapper {
         <p>
           You feel the weight of the bridges above you.
         </p>
-        <Room__Exits>
-          <div>
-            A bridge stretches away to the east.
-          </div>
-          <div>
-            There is a closed door at the end of the platform.
-          </div>
-        </Room__Exits>
+        <_default
+          action={[Function]}
+          exits={
+            Array [
+              Object {
+                "description": Array [
+                  "A bridge stretches away to the east.",
+                ],
+                "destination": "1",
+                "id": "0",
+              },
+              Object {
+                "description": Array [
+                  "There is a door at the end of the platform.",
+                ],
+                "destination": "2",
+                "id": "1",
+              },
+            ]
+          }
+        />
+        <Room__Actors>
+          <_default />
+          <_default />
+        </Room__Actors>
       </Room__RoomDescription>,
     },
     "ref": null,
@@ -54,7 +73,8 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Room__AreaName>
-            Villespont, 
+            Villespont
+            , 
             <em>
               the City of Bridges
             </em>
@@ -63,22 +83,42 @@ ShallowWrapper {
             <strong>
               Lower Arch Station
             </strong>
-            , the demilitarised zone
+            , 
+            the demilitarised zone
           </Room__RoomName>,
-          <p>
-            On a nearby corner a violin sings; the cadence of its bow dancing in time with the rhythm of your thoughts.
-          </p>,
-          <p>
-            You feel the weight of the bridges above you.
-          </p>,
-          <Room__Exits>
-            <div>
-              A bridge stretches away to the east.
-            </div>
-            <div>
-              There is a closed door at the end of the platform.
-            </div>
-          </Room__Exits>,
+          Array [
+            <p>
+              On a nearby corner a violin sings; the cadence of its bow dancing in time with the rhythm of your thoughts.
+            </p>,
+            <p>
+              You feel the weight of the bridges above you.
+            </p>,
+          ],
+          <_default
+            action={[Function]}
+            exits={
+              Array [
+                Object {
+                  "description": Array [
+                    "A bridge stretches away to the east.",
+                  ],
+                  "destination": "1",
+                  "id": "0",
+                },
+                Object {
+                  "description": Array [
+                    "There is a door at the end of the platform.",
+                  ],
+                  "destination": "2",
+                  "id": "1",
+                },
+              ]
+            }
+          />,
+          <Room__Actors>
+            <_default />
+            <_default />
+          </Room__Actors>,
         ],
       },
       "ref": null,
@@ -89,7 +129,8 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
-              "Villespont, ",
+              "Villespont",
+              ", ",
               <em>
                 the City of Bridges
               </em>,
@@ -97,7 +138,8 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
-            "Villespont, ",
+            "Villespont",
+            ", ",
             Object {
               "instance": null,
               "key": undefined,
@@ -121,7 +163,8 @@ ShallowWrapper {
               <strong>
                 Lower Arch Station
               </strong>,
-              ", the demilitarised zone",
+              ", ",
+              "the demilitarised zone",
             ],
           },
           "ref": null,
@@ -137,13 +180,14 @@ ShallowWrapper {
               "rendered": "Lower Arch Station",
               "type": "strong",
             },
-            ", the demilitarised zone",
+            ", ",
+            "the demilitarised zone",
           ],
           "type": [Function],
         },
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "On a nearby corner a violin sings; the cadence of its bow dancing in time with the rhythm of your thoughts.",
           "nodeType": "host",
           "props": Object {
             "children": "On a nearby corner a violin sings; the cadence of its bow dancing in time with the rhythm of your thoughts.",
@@ -154,7 +198,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "You feel the weight of the bridges above you.",
           "nodeType": "host",
           "props": Object {
             "children": "You feel the weight of the bridges above you.",
@@ -168,13 +212,36 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "action": [Function],
+            "exits": Array [
+              Object {
+                "description": Array [
+                  "A bridge stretches away to the east.",
+                ],
+                "destination": "1",
+                "id": "0",
+              },
+              Object {
+                "description": Array [
+                  "There is a door at the end of the platform.",
+                ],
+                "destination": "2",
+                "id": "1",
+              },
+            ],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
             "children": Array [
-              <div>
-                A bridge stretches away to the east.
-              </div>,
-              <div>
-                There is a closed door at the end of the platform.
-              </div>,
+              <_default />,
+              <_default />,
             ],
           },
           "ref": null,
@@ -182,24 +249,20 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "A bridge stretches away to the east.",
-              },
+              "nodeType": "class",
+              "props": Object {},
               "ref": null,
-              "rendered": "A bridge stretches away to the east.",
-              "type": "div",
+              "rendered": null,
+              "type": [Function],
             },
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "There is a closed door at the end of the platform.",
-              },
+              "nodeType": "class",
+              "props": Object {},
               "ref": null,
-              "rendered": "There is a closed door at the end of the platform.",
-              "type": "div",
+              "rendered": null,
+              "type": [Function],
             },
           ],
           "type": [Function],
@@ -217,7 +280,8 @@ ShallowWrapper {
       "props": Object {
         "children": <Room__RoomDescription>
           <Room__AreaName>
-            Villespont, 
+            Villespont
+            , 
             <em>
               the City of Bridges
             </em>
@@ -226,7 +290,8 @@ ShallowWrapper {
             <strong>
               Lower Arch Station
             </strong>
-            , the demilitarised zone
+            , 
+            the demilitarised zone
           </Room__RoomName>
           <p>
             On a nearby corner a violin sings; the cadence of its bow dancing in time with the rhythm of your thoughts.
@@ -234,14 +299,31 @@ ShallowWrapper {
           <p>
             You feel the weight of the bridges above you.
           </p>
-          <Room__Exits>
-            <div>
-              A bridge stretches away to the east.
-            </div>
-            <div>
-              There is a closed door at the end of the platform.
-            </div>
-          </Room__Exits>
+          <_default
+            action={[Function]}
+            exits={
+              Array [
+                Object {
+                  "description": Array [
+                    "A bridge stretches away to the east.",
+                  ],
+                  "destination": "1",
+                  "id": "0",
+                },
+                Object {
+                  "description": Array [
+                    "There is a door at the end of the platform.",
+                  ],
+                  "destination": "2",
+                  "id": "1",
+                },
+              ]
+            }
+          />
+          <Room__Actors>
+            <_default />
+            <_default />
+          </Room__Actors>
         </Room__RoomDescription>,
       },
       "ref": null,
@@ -252,7 +334,8 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <Room__AreaName>
-              Villespont, 
+              Villespont
+              , 
               <em>
                 the City of Bridges
               </em>
@@ -261,22 +344,42 @@ ShallowWrapper {
               <strong>
                 Lower Arch Station
               </strong>
-              , the demilitarised zone
+              , 
+              the demilitarised zone
             </Room__RoomName>,
-            <p>
-              On a nearby corner a violin sings; the cadence of its bow dancing in time with the rhythm of your thoughts.
-            </p>,
-            <p>
-              You feel the weight of the bridges above you.
-            </p>,
-            <Room__Exits>
-              <div>
-                A bridge stretches away to the east.
-              </div>
-              <div>
-                There is a closed door at the end of the platform.
-              </div>
-            </Room__Exits>,
+            Array [
+              <p>
+                On a nearby corner a violin sings; the cadence of its bow dancing in time with the rhythm of your thoughts.
+              </p>,
+              <p>
+                You feel the weight of the bridges above you.
+              </p>,
+            ],
+            <_default
+              action={[Function]}
+              exits={
+                Array [
+                  Object {
+                    "description": Array [
+                      "A bridge stretches away to the east.",
+                    ],
+                    "destination": "1",
+                    "id": "0",
+                  },
+                  Object {
+                    "description": Array [
+                      "There is a door at the end of the platform.",
+                    ],
+                    "destination": "2",
+                    "id": "1",
+                  },
+                ]
+              }
+            />,
+            <Room__Actors>
+              <_default />
+              <_default />
+            </Room__Actors>,
           ],
         },
         "ref": null,
@@ -287,7 +390,8 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": Array [
-                "Villespont, ",
+                "Villespont",
+                ", ",
                 <em>
                   the City of Bridges
                 </em>,
@@ -295,7 +399,8 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": Array [
-              "Villespont, ",
+              "Villespont",
+              ", ",
               Object {
                 "instance": null,
                 "key": undefined,
@@ -319,7 +424,8 @@ ShallowWrapper {
                 <strong>
                   Lower Arch Station
                 </strong>,
-                ", the demilitarised zone",
+                ", ",
+                "the demilitarised zone",
               ],
             },
             "ref": null,
@@ -335,13 +441,14 @@ ShallowWrapper {
                 "rendered": "Lower Arch Station",
                 "type": "strong",
               },
-              ", the demilitarised zone",
+              ", ",
+              "the demilitarised zone",
             ],
             "type": [Function],
           },
           Object {
             "instance": null,
-            "key": undefined,
+            "key": "On a nearby corner a violin sings; the cadence of its bow dancing in time with the rhythm of your thoughts.",
             "nodeType": "host",
             "props": Object {
               "children": "On a nearby corner a violin sings; the cadence of its bow dancing in time with the rhythm of your thoughts.",
@@ -352,7 +459,7 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": undefined,
+            "key": "You feel the weight of the bridges above you.",
             "nodeType": "host",
             "props": Object {
               "children": "You feel the weight of the bridges above you.",
@@ -366,13 +473,36 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
+              "action": [Function],
+              "exits": Array [
+                Object {
+                  "description": Array [
+                    "A bridge stretches away to the east.",
+                  ],
+                  "destination": "1",
+                  "id": "0",
+                },
+                Object {
+                  "description": Array [
+                    "There is a door at the end of the platform.",
+                  ],
+                  "destination": "2",
+                  "id": "1",
+                },
+              ],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
               "children": Array [
-                <div>
-                  A bridge stretches away to the east.
-                </div>,
-                <div>
-                  There is a closed door at the end of the platform.
-                </div>,
+                <_default />,
+                <_default />,
               ],
             },
             "ref": null,
@@ -380,24 +510,20 @@ ShallowWrapper {
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "A bridge stretches away to the east.",
-                },
+                "nodeType": "class",
+                "props": Object {},
                 "ref": null,
-                "rendered": "A bridge stretches away to the east.",
-                "type": "div",
+                "rendered": null,
+                "type": [Function],
               },
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "There is a closed door at the end of the platform.",
-                },
+                "nodeType": "class",
+                "props": Object {},
                 "ref": null,
-                "rendered": "There is a closed door at the end of the platform.",
-                "type": "div",
+                "rendered": null,
+                "type": [Function],
               },
             ],
             "type": [Function],

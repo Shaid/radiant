@@ -1,11 +1,14 @@
 import React from 'react'
 import styled from 'theme'
 
-import Action from 'components/Action'
+import MultiAction from 'components/MultiAction'
+import { IAction } from 'components/MultiAction/MultiAction.d'
 import { IProps, IDefaultProps, IState } from './Actor.d'
 
 const Actor = styled.div`
-  flex: 1 1 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0.5rem 0;
 `
 
 const actors = require('data/actors/actors.json')
@@ -27,7 +30,10 @@ const getActorDescription = (actor: any) => {
 
   const gender = actor.gender === 'female' ? 'woman' : 'man'
 
-  return `A ${age} ${gender}`
+  if ((Math.random() * 2) > 1) {
+    return `A ${age} ${gender}`
+  }
+  return actor.name
 }
 
 
@@ -48,11 +54,17 @@ export default class extends React.PureComponent<IProps, IState> {
 
   render() {
     // const {} = this.props as PropsWithDefaults
+
+    const actions:Array<IAction> = [
+      { label: 'talk to', callback: () => { console.log(`action: talk to ${this.state.actor.name}`) } },
+      { label: 'inspect', callback: () => { console.log(`action: look at ${this.state.actor.name}`) } },
+    ]
+
     return (
       <Actor>
-        <Action onClick={() => this.interact()}>
-          {getActorDescription(this.state.actor)} is here.
-        </Action>
+        <MultiAction actions={actions}>
+          {getActorDescription(this.state.actor)}
+        </MultiAction>&nbsp;is here.
       </Actor>
     )
   }

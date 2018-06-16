@@ -1,6 +1,5 @@
-import { injectGlobal } from '.'
+import { theme, injectGlobal } from '.'
 import importFonts from './fonts'
-import palette from './palette'
 
 export default () => {
   injectGlobal`
@@ -24,9 +23,9 @@ export default () => {
     body {
       font-family: 'EB Garamond', serif;
       font-variant-ligatures: contextual;
-      color: ${palette.offBlack};
+      color: ${theme.primaryColour};
       font-size: 1rem;
-      background-color: ${palette.offWhite};
+      background-color: ${theme.primaryBackground};
       display: flex;
       flex: 1 1 auto;
       flex-direction: column;

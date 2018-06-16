@@ -1,21 +1,31 @@
 {
+  "env": {
+    "test": {
+      "presets": [
+        "@babel/env"
+      ],
+      "plugins": [
+        "babel-plugin-dynamic-import-node"
+      ]
+    }
+  },
+  "presets": [
+    "@babel/typescript",
+    ["@babel/env", {
+      "modules": false,
+      "useBuiltIns": "entry"
+    }],
+    "@babel/react"
+  ],
   "plugins": [
     ["babel-plugin-styled-components", {
       "displayName": true
     }],
-    "transform-class-properties",
-    "transform-export-extensions",
-    "@babel/plugin-proposal-export-default-from",
-    "@babel/plugin-proposal-optional-chaining",
-    ["@babel/plugin-proposal-decorators", { "legacy": true }]
-  ],
-  "presets": [
-    [
-      "react-app",
-      {
-        "flow": false
-      }
-    ],
-    "@babel/typescript"
+    "@babel/plugin-syntax-dynamic-import",
+    ["@babel/proposal-decorators", {
+      "legacy": true
+    }],
+    "@babel/proposal-class-properties",
+    "@babel/transform-runtime"
   ]
 }

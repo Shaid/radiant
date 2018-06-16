@@ -1,4 +1,5 @@
 export interface IState {
+  currentRoom: number
 }
 
 export interface IProps {
