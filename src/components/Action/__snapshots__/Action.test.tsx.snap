@@ -5,7 +5,6 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <_default
-    actions={Array []}
     onClick={[Function]}
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -20,27 +19,40 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": Array [
-        <Action__Button
+      "children": <Action__Button
+        active={false}
+        onClick={[Function]}
+      />,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "active": false,
+        "children": undefined,
+        "onClick": [Function],
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <Action__Button
           active={false}
           onClick={[Function]}
         />,
-        <Action__ActionsList
-          active={false}
-          count={0}
-          innerRef={
-            Object {
-              "current": null,
-            }
-          }
-          itemSize={150}
-          radius={250}
-        />,
-      ],
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
+      },
+      "ref": null,
+      "rendered": Object {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
@@ -53,85 +65,6 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "active": false,
-          "children": Array [],
-          "count": 0,
-          "innerRef": Object {
-            "current": null,
-          },
-          "itemSize": 150,
-          "radius": 250,
-        },
-        "ref": null,
-        "rendered": Array [],
-        "type": [Function],
-      },
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": Array [
-          <Action__Button
-            active={false}
-            onClick={[Function]}
-          />,
-          <Action__ActionsList
-            active={false}
-            count={0}
-            innerRef={
-              Object {
-                "current": null,
-              }
-            }
-            itemSize={150}
-            radius={250}
-          />,
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "active": false,
-            "children": undefined,
-            "onClick": [Function],
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "active": false,
-            "children": Array [],
-            "count": 0,
-            "innerRef": Object {
-              "current": null,
-            },
-            "itemSize": 150,
-            "radius": 250,
-          },
-          "ref": null,
-          "rendered": Array [],
-          "type": [Function],
-        },
-      ],
       "type": [Function],
     },
   ],
