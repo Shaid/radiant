@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'theme'
 
-import Action from 'components/Action'
-import { IAction } from 'components/Action/Action.d'
+import MultiAction from 'components/MultiAction'
+import { IAction } from 'components/MultiAction/MultiAction.d'
 import { IProps, IDefaultProps, IState } from './Actor.d'
 
 const Actor = styled.div`
@@ -62,9 +62,9 @@ export default class extends React.PureComponent<IProps, IState> {
 
     return (
       <Actor>
-        <Action onClick={() => this.interact()} actions={actions}>
+        <MultiAction actions={actions}>
           {getActorDescription(this.state.actor)}
-        </Action>&nbsp;is here.
+        </MultiAction>&nbsp;is here.
       </Actor>
     )
   }
