@@ -6,6 +6,6 @@ import Room from '.'
 describe('<Room />', () => {
   it('renders', () => {
     const wrapper = shallow(<Room />)
-    expect(wrapper).toBeDefined
+    expect(wrapper).toBeDefined()
   })
 })
