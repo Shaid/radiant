@@ -33,6 +33,10 @@ const Actors = styled.div`
 // @todo Make room and it's travelTo() call use external props and state. Room should be from a store, etc.
 const rooms = require('data/world/rooms.json')
 const zones = require('data/world/zones.json')
+const actors = require('data/actors/actors.json')
+
+const getRandomActor = () => actors[Math.floor(Math.random() * actors.length)]
+
 
 export default class extends React.PureComponent<IProps, IState> { // eslint-disable-line react/prefer-stateless-function
   static defaultProps: Partial<IDefaultProps> = {}
@@ -64,8 +68,7 @@ export default class extends React.PureComponent<IProps, IState> { // eslint-dis
           {room.description.map((paragraph: string) => (<p key={paragraph}>{paragraph}</p>))}
           <Exits action={this.travelTo} exits={room.exits} />
           <Actors>
-            <Actor />
-            <Actor />
+            <Actor actor={getRandomActor()} />
           </Actors>
         </RoomDescription>
       </Room>

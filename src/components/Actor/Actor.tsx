@@ -11,10 +11,6 @@ const Actor = styled.div`
   margin: 0.5rem 0;
 `
 
-const actors = require('data/actors/actors.json')
-
-const getRandomActor = () => actors[Math.floor(Math.random() * actors.length)]
-
 const getActorDescription = (actor: any) => {
   const age = ((a) => {
     if (a < 35) {
@@ -40,26 +36,18 @@ const getActorDescription = (actor: any) => {
 export default class extends React.PureComponent<IProps, IState> {
   static defaultProps: Partial<IDefaultProps> = {}
 
-  constructor(props: IProps) {
-    super(props)
-
-    this.state = {
-      actor: getRandomActor()
-    }
-  }
-
   render() {
-    // const {} = this.props as PropsWithDefaults
+    const { actor } = this.props
 
     const actions:Array<IAction> = [
-      { label: 'talk to', callback: () => { console.log(`action: talk to ${this.state.actor.name}`) } },
-      { label: 'inspect', callback: () => { console.log(`action: look at ${this.state.actor.name}`) } },
+      { label: 'talk to', callback: () => { console.log(`action: talk to ${actor.name}`) } },
+      { label: 'inspect', callback: () => { console.log(`action: look at ${actor.name}`) } },
     ]
 
     return (
       <Actor>
         <MultiAction actions={actions}>
-          {getActorDescription(this.state.actor)}
+          {getActorDescription(actor)}
         </MultiAction>&nbsp;is here.
       </Actor>
     )
