@@ -42,6 +42,7 @@
       "devDependencies": ["**/*.test.{js,ts,tsx}", "**/*.spec.js"]
     }],
     "no-console": "off", // allow console statements for now
+    "no-restricted-globals": ["error", "event", "fdescribe"],
     "no-trailing-spaces": "warn",
     "no-undef": "off",
     "no-unused-expressions": ["error", {
