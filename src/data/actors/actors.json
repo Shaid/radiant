@@ -1,8 +1,8 @@
 [
   {
-    "id": "1",
+    "id": 1,
     "name": "Katarina",
-    "age": "32",
+    "age": 32,
     "gender": "female",
     "appearance": {
       "eyes": "green",
@@ -19,9 +19,9 @@
     ]
   },
   {
-    "id": "2",
+    "id": 2,
     "name": "Selene",
-    "age": "45",
+    "age": 45,
     "gender": "female",
     "appearance": {
       "eyes": "brown",
@@ -37,9 +37,9 @@
     ]
   },
   {
-    "id": "3",
+    "id": 3,
     "name": "Ragnar",
-    "age": "37",
+    "age": 37,
     "gender": "male",
     "appearance": {
       "eyes": "grey",

@@ -4,7 +4,7 @@ export interface IState {
 
 export interface IProps {
   actions: Array<IAction>
-  children?: string[] | undefined
+  children?: string[] | string | undefined
 }
 
 export interface IAction {

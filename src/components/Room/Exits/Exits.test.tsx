@@ -19,17 +19,17 @@ const exits: Array<IExit> = [
 
 describe('<Exits />', () => {
   it('renders', () => {
-    const action = jest.fn
+    const action = jest.fn()
 
     const wrapper = shallow(<Exits action={action} exits={exits} />)
     expect(wrapper).toMatchSnapshot()
   })
 
-  it.skip('triggers its action when clicked', () => {
-    const action = jest.fn
+  it('triggers its action when clicked', () => {
+    const action = jest.fn()
 
     const wrapper = mount(<Exits action={action} exits={exits} />)
-    wrapper.find('button').simulate('click')
+    wrapper.find('button').first().simulate('click')
     expect(action).toHaveBeenCalled()
   })
 })

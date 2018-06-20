@@ -1,11 +1,52 @@
 import React from 'react'
-import styled from 'theme'
+import { transparentize } from 'polished'
+import styled, { breakpoints, theme } from 'theme'
 
 import { IProps, IState } from './StatusPanel.d'
 
 const StatusPanel = styled.div`
-  flex: 0 1 15%;
-  margin-top: auto;
+  display: flex;
+  flex: 0 1 auto;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: flex-end;
+  border-top: 1px solid ${transparentize(0.75, theme.primaryColourDecorate)};
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
+
+  @media ${breakpoints.desktop} {
+    flex: 0 0 8vh;
+    padding: 0;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+`
+
+const TimeOfDay = styled.div`
+  margin: 1rem 0 0 0;
+
+  @media ${breakpoints.desktop} {
+    margin: 0 0 0 auto;
+  }
+`
+
+const PlayerStatus = styled.div`
+  display: block;
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+`
+
+const Good = styled.span`
+  color: ${theme.info};
+  font-weight: bold;
+`
+
+const Bad = styled.span`
+  color: ${theme.alert};
+  font-weight: bold;
 `
 
 export default class extends React.PureComponent<IProps, IState> { // eslint-disable-line react/prefer-stateless-function
@@ -15,8 +56,8 @@ export default class extends React.PureComponent<IProps, IState> { // eslint-dis
     // const {} = this.props
     return (
       <StatusPanel>
-        <p>It is late in the day.</p>
-        <p>You feel oppressed, and hungry.</p>
+        <PlayerStatus><p>You are <Bad>bleeding</Bad> and <Good>in good health</Good>.</p><p>You feel oppressed, and hungry.</p></PlayerStatus>
+        <TimeOfDay>It is late in the day.</TimeOfDay>
       </StatusPanel>
     )
   }

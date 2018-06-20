@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'theme'
+import styled, { breakpoints } from 'theme'
 
 import EventsPanel from 'components/EventsPanel'
 import Room from 'components/Room'
@@ -10,28 +10,12 @@ import { IProps, IDefaultProps, IState } from './UI.d'
 const UI = styled.section`
   display: flex;
   flex-flow: column nowrap;
-  margin: 1rem;
   height: 100%;
   position: relative;
+  padding: 1rem;
 
-  @media all and (orientation: landscape) {
-    margin: 2rem;
-  }
-
-  ::after {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    z-index: 1000;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #dadada;
-    opacity: 0.8;
-    transform: rotateZ(0);
-    display: none;
-    transition: opacity 0.2s ease-in-out;
-    content: " ";
+  @media ${breakpoints.desktop} {
+    padding: 0 1.5rem;
   }
 `
 

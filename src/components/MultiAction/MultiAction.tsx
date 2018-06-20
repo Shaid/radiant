@@ -1,5 +1,5 @@
 import React from 'react'
-import styled, { theme } from 'theme'
+import styled, { breakpoints, theme } from 'theme'
 import { rgba } from 'polished'
 
 import { IProps, IDefaultProps, IState } from './MultiAction.d'
@@ -11,8 +11,6 @@ interface IButtonStyled {
 interface IActionsStyled {
   active: boolean
   count: number
-  radius: number
-  itemSize: number
 }
 
 const MultiAction = styled.div`
@@ -55,7 +53,7 @@ const positionItems = (count: number, active: boolean) => {
     &:nth-of-type(${i}) {
       transform: translateY(${active ? 2.0 * i : 0}rem);
 
-      @media all and (orientation: landscape) {
+      @media ${breakpoints.desktop} {
         transform: translateY(${active ? 1.25 * i : 0}rem);
       }
     }
@@ -82,7 +80,7 @@ const positionItems = (count: number, active: boolean) => {
       border-radius: 5px;
     }
 
-    @media all and (orientation: landscape) {
+    @media ${breakpoints.desktop} {
       font-size: 1.1rem;
     }
   }`
@@ -141,7 +139,6 @@ export default class extends React.PureComponent<IProps, IState> {
           const x = Math.min(0, entry.boundingClientRect.left, entry.boundingClientRect.right)
           const y = Math.min(0, entry.boundingClientRect.top, entry.boundingClientRect.bottom)
 
-          console.log(x, y, el, entry, entry.target.getBoundingClientRect())
           if (x < 0) { console.log(`left ${-x}`); el.style.left = `${-x}px` }
           if (y < 0) { el.style.top = `${-y}px` }
         }
@@ -173,6 +170,7 @@ export default class extends React.PureComponent<IProps, IState> {
           }
         }}
         key={action.label}
+        title={action.label}
       >
         {action.label}
       </button>
@@ -189,7 +187,7 @@ export default class extends React.PureComponent<IProps, IState> {
         >
           {children}
         </Button>
-        <ActionsList innerRef={this.actionsRef} count={actionsList.length} radius={250} itemSize={150} active={active} >
+        <ActionsList innerRef={this.actionsRef} count={actionsList.length} active={active} >
           {actionsList}
         </ActionsList>
       </MultiAction>
