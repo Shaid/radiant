@@ -45,6 +45,7 @@
     "no-restricted-globals": ["error", "event", "fdescribe"],
     "no-trailing-spaces": "warn",
     "no-undef": "off",
+    "no-unused-vars": "warn",
     "no-unused-expressions": ["error", {
       "allowTaggedTemplates": true
     }],
