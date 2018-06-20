@@ -14,6 +14,8 @@ export default () => {
       margin: 0;
       overflow: hidden;
       display: flex;
+      color: ${theme.primaryColour};
+      background-color: ${theme.primaryBackground};
     }
 
     * {
@@ -30,9 +32,7 @@ export default () => {
     body {
       font-family: 'EB Garamond', serif;
       font-variant-ligatures: contextual;
-      color: ${theme.primaryColour};
       font-size: 1rem;
-      background-color: ${theme.primaryBackground};
       margin: 0;
       width: 100%;
       height: 100%;
@@ -47,8 +47,28 @@ export default () => {
     @media ${breakpoints.desktop} {
       html {
         font-size: 20px;
-        max-width: 1280px;
+        max-width: 1600px;
+        margin: 0 auto;
       }
     }
   `
 }
+
+/*
+  -- background gradient animation --
+
+  import { darken, lighten } from 'polished'
+
+`
+  background: linear-gradient(45deg, ${theme.primaryBackground}, ${lighten(0.25, theme.primaryBackground)}, ${darken(0.5, theme.primaryBackground)});
+  background-size: 2000vw 2000vh;
+  animation: AnimationName 10s linear infinite;
+
+  @keyframes AnimationName {
+      0%{background-position:9% 0%}
+      50%{background-position:92% 100%}
+      100%{background-position:9% 0%}
+  }
+`
+
+*/
