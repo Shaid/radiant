@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'theme'
+import styled, { breakpoints } from 'theme'
 
 import EventsPanel from 'components/EventsPanel'
 import Room from 'components/Room'
@@ -14,7 +14,7 @@ const UI = styled.section`
   height: 100%;
   position: relative;
 
-  @media all and (orientation: landscape) {
+  @media ${breakpoints.desktop} {
     margin: 2rem;
   }
 

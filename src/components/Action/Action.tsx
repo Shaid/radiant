@@ -32,6 +32,7 @@ const Button = styled.button`
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  text-align: left;
 `
 
 export default class extends React.PureComponent<IProps, IState> {

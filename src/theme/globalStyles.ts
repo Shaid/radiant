@@ -1,4 +1,4 @@
-import { theme, injectGlobal } from '.'
+import { breakpoints, injectGlobal, theme } from '.'
 import importFonts from './fonts'
 
 export default () => {
@@ -44,7 +44,7 @@ export default () => {
       font-size: 1rem;
     }
 
-    @media all and (orientation: landscape) {
+    @media ${breakpoints.desktop} {
       html {
         font-size: 20px;
       }

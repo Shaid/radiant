@@ -1,5 +1,5 @@
 import React from 'react'
-import styled, { theme } from 'theme'
+import styled, { breakpoints, theme } from 'theme'
 import { rgba } from 'polished'
 
 import { IProps, IDefaultProps, IState } from './MultiAction.d'
@@ -53,7 +53,7 @@ const positionItems = (count: number, active: boolean) => {
     &:nth-of-type(${i}) {
       transform: translateY(${active ? 2.0 * i : 0}rem);
 
-      @media all and (orientation: landscape) {
+      @media ${breakpoints.desktop} {
         transform: translateY(${active ? 1.25 * i : 0}rem);
       }
     }
@@ -80,7 +80,7 @@ const positionItems = (count: number, active: boolean) => {
       border-radius: 5px;
     }
 
-    @media all and (orientation: landscape) {
+    @media ${breakpoints.desktop} {
       font-size: 1.1rem;
     }
   }`

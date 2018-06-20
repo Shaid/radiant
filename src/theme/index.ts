@@ -1,6 +1,7 @@
 import * as styledComponents from 'styled-components'
 import { darken } from 'polished'
 
+import breakpoints from './breakpoints'
 import { IThemeInterface } from './index.d'
 import palette from './palette'
 
@@ -29,4 +30,4 @@ export const theme = {
 export const cssNullTransform = 'transform: translate3d(0, 0, 0);'
 
 export default styled
-export { css, keyframes, injectGlobal, withTheme, ThemeProvider }
+export { css, breakpoints, keyframes, injectGlobal, withTheme, ThemeProvider }
