@@ -6,7 +6,11 @@ import UI from 'components/UI'
 import { IProps } from './App.d'
 
 const App = styled.div`
-  display: inherit;
+  display: flex;
+  flex: 1 1 auto;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: 100%;
 `
 
 @observer

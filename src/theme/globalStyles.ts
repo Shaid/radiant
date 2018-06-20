@@ -9,7 +9,9 @@ export default () => {
       box-sizing: border-box;
       font-size: 18px;
       width: 100vw;
-      height: 90vh;
+      height: 100vh;
+      padding: 0;
+      margin: 0;
       overflow: hidden;
       display: flex;
     }
@@ -31,22 +33,21 @@ export default () => {
       color: ${theme.primaryColour};
       font-size: 1rem;
       background-color: ${theme.primaryBackground};
-      display: flex;
-      flex: 1 1 auto;
-      flex-direction: column;
-      align-items: flex-start;
       margin: 0;
+      width: 100%;
+      height: 100%;
     }
 
     #root {
-      display: flex;
-      flex: 1 1 auto;
       font-size: 1rem;
+      width: 100%;
+      height: 100%;
     }
 
     @media ${breakpoints.desktop} {
       html {
         font-size: 20px;
+        max-width: 1280px;
       }
     }
   `

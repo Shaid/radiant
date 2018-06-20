@@ -5,7 +5,10 @@ import Action from 'components/Action'
 import { IExit, IProps, IDefaultProps, IState } from './Exits.d'
 
 const Exits = styled.nav`
+  display: flex;
+  flex-flow: column nowrap;
   font-size: 1rem;
+  align-items: flex-start;
 `
 
 const Exit = styled.div`

@@ -10,28 +10,12 @@ import { IProps, IDefaultProps, IState } from './UI.d'
 const UI = styled.section`
   display: flex;
   flex-flow: column nowrap;
-  margin: 1rem;
   height: 100%;
   position: relative;
+  padding: 1rem;
 
   @media ${breakpoints.desktop} {
-    margin: 2rem;
-  }
-
-  ::after {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    z-index: 1000;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #dadada;
-    opacity: 0.8;
-    transform: rotateZ(0);
-    display: none;
-    transition: opacity 0.2s ease-in-out;
-    content: " ";
+    padding: 1.5rem;
   }
 `
 
