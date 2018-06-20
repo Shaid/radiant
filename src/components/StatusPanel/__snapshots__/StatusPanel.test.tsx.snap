@@ -18,12 +18,12 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <p>
-          It is late in the day.
-        </p>,
-        <p>
+        <StatusPanel__PlayerStatus>
           You feel oppressed, and hungry.
-        </p>,
+        </StatusPanel__PlayerStatus>,
+        <StatusPanel__TimeOfDay>
+          It is late in the day.
+        </StatusPanel__TimeOfDay>,
       ],
     },
     "ref": null,
@@ -31,24 +31,24 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "It is late in the day.",
-        },
-        "ref": null,
-        "rendered": "It is late in the day.",
-        "type": "p",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
+        "nodeType": "class",
         "props": Object {
           "children": "You feel oppressed, and hungry.",
         },
         "ref": null,
         "rendered": "You feel oppressed, and hungry.",
-        "type": "p",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "It is late in the day.",
+        },
+        "ref": null,
+        "rendered": "It is late in the day.",
+        "type": [Function],
       },
     ],
     "type": [Function],
@@ -60,12 +60,12 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <p>
-            It is late in the day.
-          </p>,
-          <p>
+          <StatusPanel__PlayerStatus>
             You feel oppressed, and hungry.
-          </p>,
+          </StatusPanel__PlayerStatus>,
+          <StatusPanel__TimeOfDay>
+            It is late in the day.
+          </StatusPanel__TimeOfDay>,
         ],
       },
       "ref": null,
@@ -73,24 +73,24 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "It is late in the day.",
-          },
-          "ref": null,
-          "rendered": "It is late in the day.",
-          "type": "p",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
             "children": "You feel oppressed, and hungry.",
           },
           "ref": null,
           "rendered": "You feel oppressed, and hungry.",
-          "type": "p",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "It is late in the day.",
+          },
+          "ref": null,
+          "rendered": "It is late in the day.",
+          "type": [Function],
         },
       ],
       "type": [Function],
