@@ -1,4 +1,5 @@
 import React from 'react'
+import { transparentize } from 'polished'
 import styled, { theme } from 'theme'
 
 import { IProps, IDefaultProps, IState } from './Action.d'
@@ -19,7 +20,7 @@ const applyButtonStyle = () => `
   font-family: 'EB Garamond', serif;
   font-size: 1rem;
   cursor: pointer;
-  text-decoration: underline solid ${theme.primaryColourDecorate};
+  text-decoration: underline solid ${transparentize(0.25, theme.primaryColourDecorate)};
 
   :focus {
     outline: none;

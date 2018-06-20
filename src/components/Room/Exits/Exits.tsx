@@ -13,9 +13,10 @@ const Exits = styled.nav`
 
 const Exit = styled.div`
   padding: 0.5rem 0;
+  display: inline-block;
 `
 
-export default class extends React.PureComponent<IProps, IState> { // eslint-disable-line react/prefer-stateless-function
+export default class extends React.PureComponent<IProps, IState> {
   static defaultProps: Partial<IDefaultProps> = {}
 
   render() {

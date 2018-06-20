@@ -6,16 +6,16 @@ import { IProps, IState } from './StatusPanel.d'
 
 const StatusPanel = styled.div`
   display: flex;
-  flex: 0 0 15vh;
+  flex: 0 1 auto;
   flex-flow: column nowrap;
-  margin-top: auto;
   align-items: flex-start;
   justify-content: flex-end;
   border-top: 1px solid ${transparentize(0.75, theme.primaryColourDecorate)};
-  padding-top: 1rem;
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
 
   @media ${breakpoints.desktop} {
-    flex: 0 0 5vh;
+    flex: 0 0 8vh;
     padding: 0;
     flex-flow: row nowrap;
     align-items: center;

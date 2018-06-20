@@ -14,39 +14,54 @@ const Room = styled.div`
 
 const RoomDescription = styled.div`
   flex: 1 1 auto;
+
+  p {
+    margin: 0 0 0.5rem 0;
+  }
 `
 
 const LocationDetails = styled.div`
   display: flex;
   flex-flow: column nowrap;
   flex: 0 1 auto;
+  margin-bottom: 0.5rem;
   border-bottom: 1px solid ${transparentize(0.75, theme.primaryColourDecorate)};
 
   @media ${breakpoints.desktop} {
     flex-flow: row nowrap;
-    align-items: flex-end;
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
+    align-items: center;
+    height: 6vh;
   }
 `
 
 const RoomName = styled.h1`
-  font-size: 1.2rem;
-  margin: 0;
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem 0;
   font-weight: normal;
+  order: 2;
 
   @media ${breakpoints.desktop} {
-    font-size: 1.5rem;
+    margin: 0;
+    order: 1;
+    font-size: 1.25rem;
   }
 `
 
 const AreaName = styled.h2`
-  font-size: 0.9rem;
+  font-size: 1rem;
+  margin: 0 0 0.5rem 0;
   font-weight: normal;
+  font-style: italic;
+  order: 1;
 
   @media ${breakpoints.desktop} {
+    order: 2;
     margin: 0 0 0 auto;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+  }
+
+  strong {
+    font-variant: small-caps;
   }
 `
 
@@ -90,7 +105,7 @@ export default class extends React.PureComponent<IProps, IState> { // eslint-dis
       <Room>
         <LocationDetails>
           <RoomName><strong>{room.name}</strong>, {sector.name}</RoomName>
-          <AreaName>{zone.name}, <em>{zone.shortTitle}</em></AreaName>
+          <AreaName><strong>{zone.name}</strong> &ndash; {zone.shortTitle}</AreaName>
         </LocationDetails>
         <RoomDescription>
           {room.description.map((paragraph: string) => (<p key={paragraph}>{paragraph}</p>))}
