@@ -19,6 +19,7 @@ const {
 export const theme = {
   alert: palette.red,
   black: palette.black,
+  info: palette.green,
   notice: palette.yellow,
   offBlack: palette.offBlack,
   offWhite: palette.offWhite,

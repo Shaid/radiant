@@ -6,16 +6,16 @@ import { IProps, IState } from './StatusPanel.d'
 
 const StatusPanel = styled.div`
   display: flex;
-  flex: 0 1 10vh;
+  flex: 0 0 15vh;
   flex-flow: column nowrap;
   margin-top: auto;
   align-items: flex-start;
   justify-content: flex-end;
   border-top: 1px solid ${transparentize(0.75, theme.primaryColourDecorate)};
   padding-top: 1rem;
-  font-size: 0.9rem;
 
   @media ${breakpoints.desktop} {
+    flex: 0 0 5vh;
     padding: 0;
     flex-flow: row nowrap;
     align-items: center;
@@ -32,6 +32,21 @@ const TimeOfDay = styled.div`
 
 const PlayerStatus = styled.div`
   display: block;
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+`
+
+const Good = styled.span`
+  color: ${theme.info};
+  font-weight: bold;
+`
+
+const Bad = styled.span`
+  color: ${theme.alert};
+  font-weight: bold;
 `
 
 export default class extends React.PureComponent<IProps, IState> { // eslint-disable-line react/prefer-stateless-function
@@ -41,7 +56,7 @@ export default class extends React.PureComponent<IProps, IState> { // eslint-dis
     // const {} = this.props
     return (
       <StatusPanel>
-        <PlayerStatus>You feel oppressed, and hungry.</PlayerStatus>
+        <PlayerStatus><p>You are <Bad>bleeding</Bad> and <Good>in good health</Good>.</p><p>You feel oppressed, and hungry.</p></PlayerStatus>
         <TimeOfDay>It is late in the day.</TimeOfDay>
       </StatusPanel>
     )

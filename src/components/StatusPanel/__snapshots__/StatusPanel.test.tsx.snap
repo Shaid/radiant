@@ -19,7 +19,20 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <StatusPanel__PlayerStatus>
-          You feel oppressed, and hungry.
+          <p>
+            You are 
+            <StatusPanel__Bad>
+              bleeding
+            </StatusPanel__Bad>
+             and 
+            <StatusPanel__Good>
+              in good health
+            </StatusPanel__Good>
+            .
+          </p>
+          <p>
+            You feel oppressed, and hungry.
+          </p>
         </StatusPanel__PlayerStatus>,
         <StatusPanel__TimeOfDay>
           It is late in the day.
@@ -33,10 +46,84 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": "You feel oppressed, and hungry.",
+          "children": Array [
+            <p>
+              You are 
+              <StatusPanel__Bad>
+                bleeding
+              </StatusPanel__Bad>
+               and 
+              <StatusPanel__Good>
+                in good health
+              </StatusPanel__Good>
+              .
+            </p>,
+            <p>
+              You feel oppressed, and hungry.
+            </p>,
+          ],
         },
         "ref": null,
-        "rendered": "You feel oppressed, and hungry.",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "You are ",
+                <StatusPanel__Bad>
+                  bleeding
+                </StatusPanel__Bad>,
+                " and ",
+                <StatusPanel__Good>
+                  in good health
+                </StatusPanel__Good>,
+                ".",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "You are ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "bleeding",
+                },
+                "ref": null,
+                "rendered": "bleeding",
+                "type": [Function],
+              },
+              " and ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "in good health",
+                },
+                "ref": null,
+                "rendered": "in good health",
+                "type": [Function],
+              },
+              ".",
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "You feel oppressed, and hungry.",
+            },
+            "ref": null,
+            "rendered": "You feel oppressed, and hungry.",
+            "type": "p",
+          },
+        ],
         "type": [Function],
       },
       Object {
@@ -61,7 +148,20 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <StatusPanel__PlayerStatus>
-            You feel oppressed, and hungry.
+            <p>
+              You are 
+              <StatusPanel__Bad>
+                bleeding
+              </StatusPanel__Bad>
+               and 
+              <StatusPanel__Good>
+                in good health
+              </StatusPanel__Good>
+              .
+            </p>
+            <p>
+              You feel oppressed, and hungry.
+            </p>
           </StatusPanel__PlayerStatus>,
           <StatusPanel__TimeOfDay>
             It is late in the day.
@@ -75,10 +175,84 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": "You feel oppressed, and hungry.",
+            "children": Array [
+              <p>
+                You are 
+                <StatusPanel__Bad>
+                  bleeding
+                </StatusPanel__Bad>
+                 and 
+                <StatusPanel__Good>
+                  in good health
+                </StatusPanel__Good>
+                .
+              </p>,
+              <p>
+                You feel oppressed, and hungry.
+              </p>,
+            ],
           },
           "ref": null,
-          "rendered": "You feel oppressed, and hungry.",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "You are ",
+                  <StatusPanel__Bad>
+                    bleeding
+                  </StatusPanel__Bad>,
+                  " and ",
+                  <StatusPanel__Good>
+                    in good health
+                  </StatusPanel__Good>,
+                  ".",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "You are ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "bleeding",
+                  },
+                  "ref": null,
+                  "rendered": "bleeding",
+                  "type": [Function],
+                },
+                " and ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "in good health",
+                  },
+                  "ref": null,
+                  "rendered": "in good health",
+                  "type": [Function],
+                },
+                ".",
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "You feel oppressed, and hungry.",
+              },
+              "ref": null,
+              "rendered": "You feel oppressed, and hungry.",
+              "type": "p",
+            },
+          ],
           "type": [Function],
         },
         Object {
