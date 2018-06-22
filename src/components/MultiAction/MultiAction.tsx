@@ -1,6 +1,7 @@
 import React from 'react'
 import styled, { breakpoints, theme } from 'theme'
 import { rgba } from 'polished'
+import { defaultButtonStyle } from 'theme/helpers'
 
 import { IProps, IDefaultProps, IState } from './MultiAction.d'
 
@@ -20,25 +21,9 @@ const MultiAction = styled.div`
   align-items: center;
 `
 
-const applyButtonStyle = () => `
-  color: ${theme.primaryColour};
-  margin: 0;
-  padding: 0;
-  background: transparent;
-  border: none;
-  font-family: 'EB Garamond', serif;
-  font-size: 1rem;
-  cursor: pointer;
-  text-decoration: underline solid ${theme.primaryColourDecorate};
-
-  :focus {
-    outline: none;
-  }
-`
-
 const Button = styled.button`
   position: relative;
-  ${applyButtonStyle()}
+  ${defaultButtonStyle}
   ${(props: IButtonStyled) => (props.active ? `z-index: 500; box-shadow: inset 0 0 0 0 ${theme.primaryBackground}, 0 15vh 25vh 25vh ${theme.primaryBackground}; border-radius: 5vh;` : '')}
   display: flex;
   flex-flow: column nowrap;
@@ -63,7 +48,7 @@ const positionItems = (count: number, active: boolean) => {
   return `
   > button {
     display: block;
-    ${applyButtonStyle()}
+    ${defaultButtonStyle}
     cursor: ${active ? 'pointer' : 'default'};
     position: absolute;
     min-width: 100px;
