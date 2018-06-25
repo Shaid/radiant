@@ -126,6 +126,7 @@
     "react-dev-utils": "^5.0.0",
     "react-dom": "^16.4.0",
     "react-transition-group": "^2.3.1",
+    "react-typist": "^2.0.4",
     "remotedev": "^0.2.7",
     "serve": "^6.5.0",
     "source-map-loader": "^0.2.3",

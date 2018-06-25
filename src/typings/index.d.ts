@@ -4,7 +4,6 @@ declare module '*.svg' {
 }
 
 declare module 'camelcase-keys-deep'
-declare module 'crypto-js/*'
+declare module 'react-typist'
 declare module 'remotedev'
 declare module 'styled-animate'
-
