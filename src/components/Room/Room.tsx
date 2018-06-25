@@ -1,4 +1,5 @@
 import React from 'react'
+import Typist from 'react-typist'
 
 import styled, { breakpoints, theme } from 'theme'
 import { transparentize } from 'polished'
@@ -64,7 +65,13 @@ const AreaName = styled.h2`
     font-variant: small-caps;
   }
 `
+interface InteractionProps {
+  display: string
+}
 
+const Interactions = styled.div`
+  ${(props: InteractionProps) => (props.display === 'true' ? 'opacity: 1; transition: opacity 0.2s ease-in-out;' : 'opacity: 0; transition: opacity 0s ease-in-out;')};
+`
 
 const Actors = styled.div`
   flex: 1 1 auto;
@@ -86,14 +93,20 @@ export default class extends React.PureComponent<IProps, IState> { // eslint-dis
     super(props)
 
     this.state = {
-      currentRoom: 0
+      currentRoom: 0,
+      typingDone: false
     }
   }
 
   travelTo = (destination: number) => {
     this.setState({
-      currentRoom: destination
+      currentRoom: destination,
+      typingDone: false,
     })
+  }
+
+  typingDone = () => {
+    this.setState({ typingDone: true })
   }
 
   render() { // eslint-disable-line class-methods-use-this
@@ -108,11 +121,22 @@ export default class extends React.PureComponent<IProps, IState> { // eslint-dis
           <AreaName><strong>{zone.name}</strong> &ndash; {zone.shortTitle}</AreaName>
         </LocationDetails>
         <RoomDescription>
-          {room.description.map((paragraph: string) => (<p key={paragraph}>{paragraph}</p>))}
-          <Exits action={this.travelTo} exits={room.exits} />
-          <Actors>
-            <Actor actor={getRandomActor()} />
-          </Actors>
+          <Typist
+            key={room.name}
+            cursor={{ show: false }}
+            avgTypingDelay={12}
+            stdTypingDelay={5}
+            startDelay={100}
+            onTypingDone={this.typingDone}
+          >
+            {room.description.map((paragraph: string) => (<p key={paragraph}>{paragraph}</p>))}
+          </Typist>
+          <Interactions display={this.state.typingDone.toString()}>
+            <Exits action={this.travelTo} exits={room.exits} />
+            <Actors>
+              <Actor actor={getRandomActor()} />
+            </Actors>
+          </Interactions>
         </RoomDescription>
       </Room>
     )

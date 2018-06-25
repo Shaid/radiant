@@ -1,5 +1,6 @@
 export interface IState {
   currentRoom: number
+  typingDone: boolean
 }
 
 export interface IProps {
