@@ -6,7 +6,11 @@
     "sectors": [
       {
       "id": 0,
-      "name": "the demilitarised zone"
+      "name": "the deeper spans"
+      },
+      {
+      "id": 1,
+      "name": "the lower city"
       }
     ]
   },

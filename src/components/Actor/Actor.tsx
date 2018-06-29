@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'theme'
 
-import MultiAction from 'components/MultiAction'
-import { IAction } from 'components/MultiAction/MultiAction.d'
+import Interaction from 'components/Interaction'
+import { IAction } from 'components/Interaction/Interaction.d'
 import { IProps, IDefaultProps, IState } from './Actor.d'
 
 const Actor = styled.div`
@@ -11,7 +11,7 @@ const Actor = styled.div`
   margin: 0.5rem 0;
 `
 
-const getActorDescription = (actor: any) => {
+const getActorDisplay = (actor: any) => {
   const age = ((a) => {
     if (a < 35) {
       return 'young'
@@ -32,6 +32,11 @@ const getActorDescription = (actor: any) => {
   return actor.name
 }
 
+const getActorDescription = (actor: any) => {
+  const pronoun = actor.gender === 'female' ? 'she' : 'he'
+
+  return `${pronoun} looks ${actor.status}`
+}
 
 export default class extends React.PureComponent<IProps, IState> {
   static defaultProps: Partial<IDefaultProps> = {}
@@ -46,9 +51,9 @@ export default class extends React.PureComponent<IProps, IState> {
 
     return (
       <Actor>
-        <MultiAction actions={actions}>
-          {getActorDescription(actor)}
-        </MultiAction>&nbsp;is here.
+        <Interaction actions={actions} description={getActorDescription(actor)}>
+          {getActorDisplay(actor)}
+        </Interaction>&nbsp;is here.
       </Actor>
     )
   }
