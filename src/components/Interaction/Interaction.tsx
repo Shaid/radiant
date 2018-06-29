@@ -3,7 +3,7 @@ import styled, { breakpoints, theme } from 'theme'
 import { rgba } from 'polished'
 import { defaultButtonStyle } from 'theme/helpers'
 
-import { IProps, IDefaultProps, IState } from './MultiAction.d'
+import { IProps, IDefaultProps, IState } from './Interaction.d'
 
 interface IButtonStyled {
   active: boolean
@@ -14,7 +14,7 @@ interface IActionsStyled {
   count: number
 }
 
-const MultiAction = styled.div`
+const Interaction = styled.div`
   position: relative;
   display: flex;
   flex-flow: column nowrap;
@@ -35,7 +35,7 @@ const positionItems = (count: number, active: boolean) => {
 
   for (let i = 1; i <= count; i++) {
     positions += `
-    &:nth-of-type(${i}) {
+    &:nth-child(${i}) {
       transform: translateY(${active ? 2.0 * i : 0}rem);
 
       @media ${breakpoints.desktop} {
@@ -46,19 +46,25 @@ const positionItems = (count: number, active: boolean) => {
   }
 
   return `
-  > button {
+  > * {
     display: block;
-    ${defaultButtonStyle}
-    cursor: ${active ? 'pointer' : 'default'};
     position: absolute;
+    font-size: 0.9rem;
     min-width: 100px;
-    font-size: 1.3rem;
-    font-variant: small-caps;
+    max-width: 100vw;
     text-decoration: none;
     transition: transform 0.2s ease-in;
     left: 0;
     top: 10px;
     ${positions}
+
+  }
+
+  > button {
+    ${defaultButtonStyle}
+    cursor: ${active ? 'pointer' : 'default'};
+    font-size: 1.3rem;
+    font-variant: small-caps;
 
     :hover {
       background-color: ${rgba(theme.primaryColourDecorate, 0.2)};
@@ -68,8 +74,29 @@ const positionItems = (count: number, active: boolean) => {
     @media ${breakpoints.desktop} {
       font-size: 1.1rem;
     }
-  }`
+  }
+  `
 }
+
+const ActiveView = styled.div`
+  display: flex;
+  flex-flow: column nowrap;
+`
+
+const Description = styled.div`
+  font-style: italic;
+  position: absolute;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: transform 0.2s ease-in;
+  left: 0;
+  top: 30px;
+  width: 100vw;
+
+  @media ${breakpoints.desktop} {
+    font-size: 0.9rem;
+  }
+`
 
 const ActionsList = styled.nav`
   display: flex;
@@ -86,6 +113,7 @@ const ActionsList = styled.nav`
   ${(props: IActionsStyled) => (props.active ? 'z-index: 500;' : 'z-index: -1;')}
   ${(props: IActionsStyled) => positionItems(props.count, props.active)}
 `
+
 
 export default class extends React.PureComponent<IProps, IState> {
   static defaultProps: Partial<IDefaultProps> = {}
@@ -142,7 +170,7 @@ export default class extends React.PureComponent<IProps, IState> {
   actionsRef:any = React.createRef()
 
   render() {
-    const { actions, children } = this.props
+    const { actions, children, description } = this.props
     const { active } = this.state
 
     const actionsList = actions.map((action) => (
@@ -162,7 +190,7 @@ export default class extends React.PureComponent<IProps, IState> {
     ))
 
     return (
-      <MultiAction>
+      <Interaction>
         <Button
           active={active}
           onClick={(event) => {
@@ -172,10 +200,15 @@ export default class extends React.PureComponent<IProps, IState> {
         >
           {children}
         </Button>
-        <ActionsList innerRef={this.actionsRef} count={actionsList.length} active={active} >
-          {actionsList}
-        </ActionsList>
-      </MultiAction>
+        <ActiveView>
+          <ActionsList innerRef={this.actionsRef} count={actionsList.length + 1} active={active} >
+            <Description>
+              {description}
+            </Description>
+            {actionsList}
+          </ActionsList>
+        </ActiveView>
+      </Interaction>
     )
   }
 }

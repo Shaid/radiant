@@ -69,7 +69,7 @@
     "id": 3,
     "name": "Lower City Gate",
     "zone": 0,
-    "sector": 0,
+    "sector": 1,
     "description": [
       "\"BEHOLD\", shouts a guard, \"the grand city of Villespont!\".",
       "You stand before the city gate."

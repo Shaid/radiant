@@ -1,0 +1,215 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Action /> renders 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <_default
+    actions={Array []}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <Interaction__Button
+          active={false}
+          onClick={[Function]}
+        />,
+        <Interaction__ActiveView>
+          <Interaction__ActionsList
+            active={false}
+            count={1}
+            innerRef={
+              Object {
+                "current": null,
+              }
+            }
+          >
+            <Interaction__Description />
+          </Interaction__ActionsList>
+        </Interaction__ActiveView>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "active": false,
+          "children": undefined,
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <Interaction__ActionsList
+            active={false}
+            count={1}
+            innerRef={
+              Object {
+                "current": null,
+              }
+            }
+          >
+            <Interaction__Description />
+          </Interaction__ActionsList>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "active": false,
+            "children": Array [
+              <Interaction__Description />,
+              Array [],
+            ],
+            "count": 1,
+            "innerRef": Object {
+              "current": null,
+            },
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Interaction__Button
+            active={false}
+            onClick={[Function]}
+          />,
+          <Interaction__ActiveView>
+            <Interaction__ActionsList
+              active={false}
+              count={1}
+              innerRef={
+                Object {
+                  "current": null,
+                }
+              }
+            >
+              <Interaction__Description />
+            </Interaction__ActionsList>
+          </Interaction__ActiveView>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "active": false,
+            "children": undefined,
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Interaction__ActionsList
+              active={false}
+              count={1}
+              innerRef={
+                Object {
+                  "current": null,
+                }
+              }
+            >
+              <Interaction__Description />
+            </Interaction__ActionsList>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "active": false,
+              "children": Array [
+                <Interaction__Description />,
+                Array [],
+              ],
+              "count": 1,
+              "innerRef": Object {
+                "current": null,
+              },
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
