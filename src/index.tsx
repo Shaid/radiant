@@ -39,9 +39,11 @@ if (config.ENV === 'development') {
 
 export default ReactDOM.render(
   <App store={store}>
-    <div id="devtools" aria-hidden>
-      <MobXDevTools />
-    </div>
+    <React.StrictMode>
+      <div id="devtools" aria-hidden>
+        <MobXDevTools />
+      </div>
+    </React.StrictMode>
   </App>
   ,
   document.getElementById('root') || document.createElement('div')
