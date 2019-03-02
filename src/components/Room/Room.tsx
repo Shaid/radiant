@@ -124,9 +124,9 @@ export default class extends React.PureComponent<IProps, IState> { // eslint-dis
           <Typist
             key={room.name}
             cursor={{ show: false }}
-            avgTypingDelay={12}
-            stdTypingDelay={5}
-            startDelay={100}
+            avgTypingDelay={6} // was 12
+            stdTypingDelay={2} // was 5
+            startDelay={50} // was 100
             onTypingDone={this.typingDone}
           >
             {room.description.map((paragraph: string) => (<p key={paragraph}>{paragraph}</p>))}
