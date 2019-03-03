@@ -1,0 +1,21 @@
+diff --git a/node_modules/react-scripts/scripts/utils/verifyTypeScriptSetup.js b/node_modules/react-scripts/scripts/utils/verifyTypeScriptSetup.js
+index 370c717..4261271 100755
+--- a/node_modules/react-scripts/scripts/utils/verifyTypeScriptSetup.js
++++ b/node_modules/react-scripts/scripts/utils/verifyTypeScriptSetup.js
+@@ -123,11 +123,11 @@ function verifyTypeScriptSetup() {
+     },
+     // We do not support absolute imports, though this may come as a future
+     // enhancement
+-    baseUrl: {
+-      value: undefined,
+-      reason: 'absolute imports are not supported (yet)',
+-    },
+-    paths: { value: undefined, reason: 'aliased imports are not supported' },
++    //baseUrl: {
++    //  value: undefined,
++    //  reason: 'absolute imports are not supported (yet)',
++    //},
++    //paths: { value: undefined, reason: 'aliased imports are not supported' },
+   };
+ 
+   const formatDiagnosticHost = {

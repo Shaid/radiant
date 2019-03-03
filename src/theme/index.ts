@@ -7,9 +7,9 @@ import palette from './palette'
 
 
 const {
+  createGlobalStyle,
   default: styled,
   css,
-  injectGlobal,
   keyframes,
   withTheme,
   ThemeProvider
@@ -31,4 +31,6 @@ export const theme = {
 export const cssNullTransform = 'transform: translate3d(0, 0, 0);'
 
 export default styled
-export { css, breakpoints, keyframes, injectGlobal, withTheme, ThemeProvider }
+export {
+  createGlobalStyle, css, breakpoints, keyframes, withTheme, ThemeProvider
+}

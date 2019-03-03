@@ -1,58 +1,58 @@
-import { breakpoints, injectGlobal, theme } from '.'
+import { breakpoints, createGlobalStyle, theme } from '.'
 import importFonts from './fonts'
 
-export default () => {
-  injectGlobal`
-    ${importFonts()}
+const GlobalStyle = createGlobalStyle`
+  ${importFonts()}
 
+  html {
+    box-sizing: border-box;
+    font-size: 18px;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    color: ${theme.primaryColour};
+    background-color: ${theme.primaryBackground};
+  }
+
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  body {
+    font-family: 'EB Garamond', serif;
+    font-variant-ligatures: contextual;
+    font-size: 1rem;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  #root {
+    font-size: 1rem;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media ${breakpoints.desktop} {
     html {
-      box-sizing: border-box;
-      font-size: 18px;
-      width: 100vw;
-      height: 100vh;
-      padding: 0;
-      margin: 0;
-      overflow: hidden;
-      display: flex;
-      color: ${theme.primaryColour};
-      background-color: ${theme.primaryBackground};
+      font-size: 20px;
+      max-width: 1600px;
+      margin: 0 auto;
     }
+  }
+`
 
-    * {
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-
-    *,
-    *::before,
-    *::after {
-      box-sizing: inherit;
-    }
-
-    body {
-      font-family: 'EB Garamond', serif;
-      font-variant-ligatures: contextual;
-      font-size: 1rem;
-      margin: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    #root {
-      font-size: 1rem;
-      width: 100%;
-      height: 100%;
-    }
-
-    @media ${breakpoints.desktop} {
-      html {
-        font-size: 20px;
-        max-width: 1600px;
-        margin: 0 auto;
-      }
-    }
-  `
-}
+export default GlobalStyle
 
 /*
   -- background gradient animation --

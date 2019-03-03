@@ -29,7 +29,7 @@ export default class extends React.PureComponent<IProps, IState> {
     return (
       <Action>
         <Button
-          onClick={(event) => {
+          onClick={(event: React.MouseEvent<HTMLElement, MouseEvent>) => {
             event.stopPropagation()
             onClick()
           }}

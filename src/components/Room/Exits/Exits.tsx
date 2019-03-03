@@ -2,7 +2,9 @@ import React from 'react'
 import styled from 'theme'
 
 import Action from 'components/Action'
-import { IExit, IProps, IDefaultProps, IState } from './Exits.d'
+import {
+  IExit, IProps, IDefaultProps, IState
+} from './Exits.d'
 
 const Exits = styled.nav`
   display: flex;
@@ -20,11 +22,11 @@ export default class extends React.PureComponent<IProps, IState> {
   static defaultProps: Partial<IDefaultProps> = {}
 
   render() {
-    const { exits } = this.props
+    const { action, exits } = this.props
 
     const exitActions = exits.map((exit: IExit) => (
       <Exit key={exit.id}>
-        <Action onClick={() => this.props.action(exit.destination)}>
+        <Action onClick={() => action(exit.destination)}>
           {exit.description}
         </Action>
       </Exit>

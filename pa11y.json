@@ -1,7 +1,0 @@
-{
-  "hideElements": [
-    "#devtools"
-  ],
-  "includeWarnings": true,
-  "standard": "WCAG2AA"
-}

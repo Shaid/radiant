@@ -53,7 +53,8 @@ export default class extends React.PureComponent<IProps, IState> {
       <Actor>
         <Interaction actions={actions} description={getActorDescription(actor)}>
           {getActorDisplay(actor)}
-        </Interaction>&nbsp;is here.
+        </Interaction>
+&nbsp;is here.
       </Actor>
     )
   }

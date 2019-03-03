@@ -1,4 +1,5 @@
 import { types } from 'mobx-state-tree'
+import makeInspectable from 'mobx-devtools-mst'
 
 // MODEL
 export const AppModel = {
@@ -11,8 +12,12 @@ const AppStore = types
 export default AppStore
 
 // INIT
-export const initialiseAppStore = () => AppStore.create({
-})
+export const initialiseAppStore = () => {
+  const appStore = AppStore.create({})
+  makeInspectable(appStore)
+
+  return appStore
+}
 
 export type AppStoreType = typeof AppStore.Type
 export type AppStoreSnapshotType = typeof AppStore.SnapshotType
