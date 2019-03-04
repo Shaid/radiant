@@ -5,6 +5,6 @@ source "$SCRIPT_DIR/utils.sh"
 
 # Jobs to run in parallel
 export CI=true
-npm run test -- --all --coverage & add_job
+npm run test -- --all & add_job
 
 wait_for_jobs
