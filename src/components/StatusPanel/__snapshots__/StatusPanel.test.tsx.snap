@@ -2,41 +2,43 @@
 
 exports[`<StatusPanel /> renders 1`] = `
 ShallowWrapper {
-  "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <_default />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
     "getNode": [Function],
     "render": [Function],
+    "simulateError": [Function],
     "simulateEvent": [Function],
     "unmount": [Function],
   },
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "class",
+    "nodeType": "function",
     "props": Object {
       "children": Array [
-        <StatusPanel__PlayerStatus>
+        <ForwardRef>
           <p>
-            You are 
-            <StatusPanel__Bad>
+            You are
+            <ForwardRef>
               bleeding
-            </StatusPanel__Bad>
-             and 
-            <StatusPanel__Good>
+            </ForwardRef>
+             
+            and
+            <ForwardRef>
               in good health
-            </StatusPanel__Good>
+            </ForwardRef>
             .
           </p>
           <p>
             You feel oppressed, and hungry.
           </p>
-        </StatusPanel__PlayerStatus>,
-        <StatusPanel__TimeOfDay>
+        </ForwardRef>,
+        <ForwardRef>
           It is late in the day.
-        </StatusPanel__TimeOfDay>,
+        </ForwardRef>,
       ],
     },
     "ref": null,
@@ -44,18 +46,19 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
+        "nodeType": "function",
         "props": Object {
           "children": Array [
             <p>
-              You are 
-              <StatusPanel__Bad>
+              You are
+              <ForwardRef>
                 bleeding
-              </StatusPanel__Bad>
-               and 
-              <StatusPanel__Good>
+              </ForwardRef>
+               
+              and
+              <ForwardRef>
                 in good health
-              </StatusPanel__Good>
+              </ForwardRef>
               .
             </p>,
             <p>
@@ -71,42 +74,90 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                "You are ",
-                <StatusPanel__Bad>
+                "You are",
+                <ForwardRef>
                   bleeding
-                </StatusPanel__Bad>,
-                " and ",
-                <StatusPanel__Good>
+                </ForwardRef>,
+                " ",
+                "and",
+                <ForwardRef>
                   in good health
-                </StatusPanel__Good>,
+                </ForwardRef>,
                 ".",
               ],
             },
             "ref": null,
             "rendered": Array [
-              "You are ",
+              "You are",
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "class",
+                "nodeType": "function",
                 "props": Object {
                   "children": "bleeding",
                 },
                 "ref": null,
                 "rendered": "bleeding",
-                "type": [Function],
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-ifAKCX",
+                    "isStatic": true,
+                    "rules": Array [
+                      "
+  color: ",
+                      "#cc3333",
+                      ";
+  font-weight: bold;
+",
+                    ],
+                  },
+                  "displayName": "styled.span",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-ifAKCX",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                },
               },
-              " and ",
+              " ",
+              "and",
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "class",
+                "nodeType": "function",
                 "props": Object {
                   "children": "in good health",
                 },
                 "ref": null,
                 "rendered": "in good health",
-                "type": [Function],
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bxivhb",
+                    "isStatic": true,
+                    "rules": Array [
+                      "
+  color: ",
+                      "#33cc33",
+                      ";
+  font-weight: bold;
+",
+                    ],
+                  },
+                  "displayName": "styled.span",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bxivhb",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                },
               },
               ".",
             ],
@@ -124,48 +175,138 @@ ShallowWrapper {
             "type": "p",
           },
         ],
-        "type": [Function],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-htpNat",
+            "isStatic": true,
+            "rules": Array [
+              "
+  display: block;
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-htpNat",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
       },
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
+        "nodeType": "function",
         "props": Object {
           "children": "It is late in the day.",
         },
         "ref": null,
         "rendered": "It is late in the day.",
-        "type": [Function],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": true,
+            "rules": Array [
+              "
+  margin: 1rem 0 0 0;
+
+  @media ",
+              "all and (orientation: landscape)",
+              " {
+    margin: 0 0 0 auto;
+  }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
       },
     ],
-    "type": [Function],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bdVaJa",
+        "isStatic": true,
+        "rules": Array [
+          "
+  display: flex;
+  flex: 0 1 auto;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: flex-end;
+  border-top: 1px solid ",
+          "rgba(90,90,90,0.25)",
+          ";
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
+
+  @media ",
+          "all and (orientation: landscape)",
+          " {
+    flex: 0 0 8vh;
+    padding: 0;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+",
+        ],
+      },
+      "displayName": "styled.div",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-bdVaJa",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "function",
       "props": Object {
         "children": Array [
-          <StatusPanel__PlayerStatus>
+          <ForwardRef>
             <p>
-              You are 
-              <StatusPanel__Bad>
+              You are
+              <ForwardRef>
                 bleeding
-              </StatusPanel__Bad>
-               and 
-              <StatusPanel__Good>
+              </ForwardRef>
+               
+              and
+              <ForwardRef>
                 in good health
-              </StatusPanel__Good>
+              </ForwardRef>
               .
             </p>
             <p>
               You feel oppressed, and hungry.
             </p>
-          </StatusPanel__PlayerStatus>,
-          <StatusPanel__TimeOfDay>
+          </ForwardRef>,
+          <ForwardRef>
             It is late in the day.
-          </StatusPanel__TimeOfDay>,
+          </ForwardRef>,
         ],
       },
       "ref": null,
@@ -173,18 +314,19 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "function",
           "props": Object {
             "children": Array [
               <p>
-                You are 
-                <StatusPanel__Bad>
+                You are
+                <ForwardRef>
                   bleeding
-                </StatusPanel__Bad>
-                 and 
-                <StatusPanel__Good>
+                </ForwardRef>
+                 
+                and
+                <ForwardRef>
                   in good health
-                </StatusPanel__Good>
+                </ForwardRef>
                 .
               </p>,
               <p>
@@ -200,42 +342,90 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "You are ",
-                  <StatusPanel__Bad>
+                  "You are",
+                  <ForwardRef>
                     bleeding
-                  </StatusPanel__Bad>,
-                  " and ",
-                  <StatusPanel__Good>
+                  </ForwardRef>,
+                  " ",
+                  "and",
+                  <ForwardRef>
                     in good health
-                  </StatusPanel__Good>,
+                  </ForwardRef>,
                   ".",
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "You are ",
+                "You are",
                 Object {
                   "instance": null,
                   "key": undefined,
-                  "nodeType": "class",
+                  "nodeType": "function",
                   "props": Object {
                     "children": "bleeding",
                   },
                   "ref": null,
                   "rendered": "bleeding",
-                  "type": [Function],
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-ifAKCX",
+                      "isStatic": true,
+                      "rules": Array [
+                        "
+  color: ",
+                        "#cc3333",
+                        ";
+  font-weight: bold;
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-ifAKCX",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  },
                 },
-                " and ",
+                " ",
+                "and",
                 Object {
                   "instance": null,
                   "key": undefined,
-                  "nodeType": "class",
+                  "nodeType": "function",
                   "props": Object {
                     "children": "in good health",
                   },
                   "ref": null,
                   "rendered": "in good health",
-                  "type": [Function],
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bxivhb",
+                      "isStatic": true,
+                      "rules": Array [
+                        "
+  color: ",
+                        "#33cc33",
+                        ";
+  font-weight: bold;
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bxivhb",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  },
                 },
                 ".",
               ],
@@ -253,29 +443,133 @@ ShallowWrapper {
               "type": "p",
             },
           ],
-          "type": [Function],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-htpNat",
+              "isStatic": true,
+              "rules": Array [
+                "
+  display: block;
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+",
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-htpNat",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
         },
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "function",
           "props": Object {
             "children": "It is late in the day.",
           },
           "ref": null,
           "rendered": "It is late in the day.",
-          "type": [Function],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bwzfXH",
+              "isStatic": true,
+              "rules": Array [
+                "
+  margin: 1rem 0 0 0;
+
+  @media ",
+                "all and (orientation: landscape)",
+                " {
+    margin: 0 0 0 auto;
+  }
+",
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bwzfXH",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
         },
       ],
-      "type": [Function],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bdVaJa",
+          "isStatic": true,
+          "rules": Array [
+            "
+  display: flex;
+  flex: 0 1 auto;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: flex-end;
+  border-top: 1px solid ",
+            "rgba(90,90,90,0.25)",
+            ";
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
+
+  @media ",
+            "all and (orientation: landscape)",
+            " {
+    flex: 0 0 8vh;
+    padding: 0;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bdVaJa",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
     },
   ],
   Symbol(enzyme.__options__): Object {
     "adapter": ReactSixteenAdapter {
       "options": Object {
         "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
       },
     },
   },
+  Symbol(enzyme.__childContext__): null,
 }
 `;

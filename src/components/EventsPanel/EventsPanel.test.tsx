@@ -9,5 +9,5 @@ describe('<EventsPanel />', () => {
     expect(wrapper).toMatchSnapshot()
   })
 
-  it('TODO: tests for EventsPanel')
+  // @TODO: tests for EventsPanel
 })

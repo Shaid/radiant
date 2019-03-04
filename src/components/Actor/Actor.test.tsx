@@ -29,5 +29,5 @@ describe('<Actor />', () => {
     expect(wrapper).toBeDefined()
   })
 
-  it('TODO: tests for Actor')
+  // @TODO: tests for Actor
 })

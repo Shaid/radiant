@@ -9,5 +9,5 @@ describe('<StatusPanel />', () => {
     expect(wrapper).toMatchSnapshot()
   })
 
-  it('TODO: tests for StatusPanel')
+  // @TODO: tests for StatusPanel
 })

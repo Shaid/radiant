@@ -2,24 +2,25 @@
 
 exports[`<UI /> renders 1`] = `
 ShallowWrapper {
-  "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <_default />,
+  Symbol(enzyme.__unrendered__): <_class />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
     "getNode": [Function],
     "render": [Function],
+    "simulateError": [Function],
     "simulateEvent": [Function],
     "unmount": [Function],
   },
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "class",
+    "nodeType": "function",
     "props": Object {
       "children": Array [
-        <_default />,
-        <_default />,
+        <_class />,
+        <_class />,
         <_default />,
       ],
     },
@@ -53,17 +54,47 @@ ShallowWrapper {
         "type": [Function],
       },
     ],
-    "type": [Function],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-dxgOiQ",
+        "isStatic": true,
+        "rules": Array [
+          "
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  position: relative;
+  padding: 1rem;
+
+  @media ",
+          "all and (orientation: landscape)",
+          " {
+    padding: 0 1.5rem;
+  }
+",
+        ],
+      },
+      "displayName": "styled.section",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-dxgOiQ",
+      "target": "section",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "function",
       "props": Object {
         "children": Array [
-          <_default />,
-          <_default />,
+          <_class />,
+          <_class />,
           <_default />,
         ],
       },
@@ -97,15 +128,60 @@ ShallowWrapper {
           "type": [Function],
         },
       ],
-      "type": [Function],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-dxgOiQ",
+          "isStatic": true,
+          "rules": Array [
+            "
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  position: relative;
+  padding: 1rem;
+
+  @media ",
+            "all and (orientation: landscape)",
+            " {
+    padding: 0 1.5rem;
+  }
+",
+          ],
+        },
+        "displayName": "styled.section",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-dxgOiQ",
+        "target": "section",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
     },
   ],
   Symbol(enzyme.__options__): Object {
     "adapter": ReactSixteenAdapter {
       "options": Object {
         "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
       },
     },
   },
+  Symbol(enzyme.__childContext__): null,
 }
 `;
