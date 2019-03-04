@@ -1,6 +1,6 @@
 import { transparentize } from 'polished'
 
-import { theme } from './'
+import { theme } from '.'
 
 export const defaultButtonStyle = `
 color: ${theme.primaryColour};

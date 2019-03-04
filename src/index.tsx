@@ -1,20 +1,16 @@
 import { configure as mobxConfigure } from 'mobx'
-import { addMiddleware } from 'mobx-state-tree'
-import { simpleActionLogger as logger, asReduxStore, connectReduxDevtools } from 'mst-middlewares'
+// import { addMiddleware } from 'mobx-state-tree'
+// import { simpleActionLogger as logger, asReduxStore, connectReduxDevtools } from 'mst-middlewares'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import remotedev from 'remotedev'
+// import remotedev from 'remotedev'
 
 import App from 'components/App'
-import config from 'config'
+// import config from 'config'
 import registerServiceWorker from 'registerServiceWorker'
 import { initialiseAppStore } from 'stores/AppStore'
 
-import injectGlobalStyles from 'theme/globalStyles'
-
 require('intersection-observer')
-
-injectGlobalStyles()
 
 // MobX 4+ 'useStrict'
 mobxConfigure({ enforceActions: true })
@@ -22,8 +18,8 @@ mobxConfigure({ enforceActions: true })
 // Create app store
 const store = initialiseAppStore()
 
-let MobXDevTools = React.Fragment
-
+const MobXDevTools = React.Fragment
+/*
 // Dev-env-only things go here
 if (config.ENV === 'development') {
   // Dynamically load MobX dev tools
@@ -36,6 +32,7 @@ if (config.ENV === 'development') {
   asReduxStore(store)
   connectReduxDevtools(remotedev, store)
 }
+*/
 
 export default ReactDOM.render(
   <App store={store}>
@@ -44,8 +41,7 @@ export default ReactDOM.render(
         <MobXDevTools />
       </div>
     </React.StrictMode>
-  </App>
-  ,
+  </App>,
   document.getElementById('root') || document.createElement('div')
 )
 

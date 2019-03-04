@@ -118,6 +118,8 @@ const ActionsList = styled.nav`
 export default class extends React.PureComponent<IProps, IState> {
   static defaultProps: Partial<IDefaultProps> = {}
 
+  actionsRef:any = React.createRef()
+  
   constructor(props: IProps, state: IState) {
     super(props, state)
 
@@ -158,7 +160,7 @@ export default class extends React.PureComponent<IProps, IState> {
       })
     }, ioOptions)
 
-    Array.from(this.actionsRef.current.children).forEach((child: Element) => {
+    Array.from(this.actionsRef.current.children).forEach((child: any) => {
       intersectionObserver.observe(child)
     })
 
@@ -167,15 +169,14 @@ export default class extends React.PureComponent<IProps, IState> {
     })
   }
 
-  actionsRef:any = React.createRef()
-
   render() {
     const { actions, children, description } = this.props
     const { active } = this.state
 
     const actionsList = actions.map((action) => (
-      <button
-        onClick={(event) => {
+      <button 
+        type="button"
+        onClick={(event: React.MouseEvent<HTMLElement, MouseEvent>) => {
           if (active) {
             event.stopPropagation()
             action.callback()
@@ -193,7 +194,7 @@ export default class extends React.PureComponent<IProps, IState> {
       <Interaction>
         <Button
           active={active}
-          onClick={(event) => {
+          onClick={(event: React.MouseEvent<HTMLElement, MouseEvent>) => {
             event.stopPropagation()
             this.setActive(true)
           }}
@@ -201,7 +202,7 @@ export default class extends React.PureComponent<IProps, IState> {
           {children}
         </Button>
         <ActiveView>
-          <ActionsList innerRef={this.actionsRef} count={actionsList.length + 1} active={active} >
+          <ActionsList ref={this.actionsRef} count={actionsList.length + 1} active={active}>
             <Description>
               {description}
             </Description>

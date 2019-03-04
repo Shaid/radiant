@@ -56,7 +56,17 @@ export default class extends React.PureComponent<IProps, IState> { // eslint-dis
     // const {} = this.props
     return (
       <StatusPanel>
-        <PlayerStatus><p>You are <Bad>bleeding</Bad> and <Good>in good health</Good>.</p><p>You feel oppressed, and hungry.</p></PlayerStatus>
+        <PlayerStatus>
+          <p>
+You are
+            <Bad>bleeding</Bad>
+            {' '}
+and
+            <Good>in good health</Good>
+.
+          </p>
+          <p>You feel oppressed, and hungry.</p>
+        </PlayerStatus>
         <TimeOfDay>It is late in the day.</TimeOfDay>
       </StatusPanel>
     )

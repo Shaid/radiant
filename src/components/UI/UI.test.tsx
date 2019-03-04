@@ -9,5 +9,5 @@ describe('<UI />', () => {
     expect(wrapper).toMatchSnapshot()
   })
 
-  it('TODO: tests for UI')
+  // @TODO: tests for UI
 })

@@ -13,6 +13,7 @@ export default ActorModel
 
 // INIT
 export const initialiseActorStore = () => ActorStore.create({
+  name: 'Actor'
 })
 
 export type ActorStoreType = typeof ActorStore.Type

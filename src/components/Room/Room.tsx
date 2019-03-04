@@ -110,15 +110,27 @@ export default class extends React.PureComponent<IProps, IState> { // eslint-dis
   }
 
   render() { // eslint-disable-line class-methods-use-this
-    const room = rooms[this.state.currentRoom]
+    const { currentRoom, typingDone } = this.state
+    const room = rooms[currentRoom]
     const zone = zones[room.zone]
     const sector = zone.sectors[room.sector]
 
     return (
       <Room>
         <LocationDetails>
-          <RoomName><strong>{room.name}</strong>, {sector.name}</RoomName>
-          <AreaName><strong>{zone.name}</strong> &ndash; {zone.shortTitle}</AreaName>
+          <RoomName>
+            <strong>{room.name}</strong>
+,
+            {' '}
+            {sector.name}
+          </RoomName>
+          <AreaName>
+            <strong>{zone.name}</strong>
+            {' '}
+&ndash;
+            {' '}
+            {zone.shortTitle}
+          </AreaName>
         </LocationDetails>
         <RoomDescription>
           <Typist
@@ -131,7 +143,7 @@ export default class extends React.PureComponent<IProps, IState> { // eslint-dis
           >
             {room.description.map((paragraph: string) => (<p key={paragraph}>{paragraph}</p>))}
           </Typist>
-          <Interactions display={this.state.typingDone.toString()}>
+          <Interactions display={typingDone.toString()}>
             <Exits action={this.travelTo} exits={room.exits} />
             <Actors>
               <Actor actor={getRandomActor()} />
