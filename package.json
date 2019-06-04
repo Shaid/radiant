@@ -28,8 +28,7 @@
     "stylelint": "stylelint $(npm root)/../src/",
     "visualiser": "VISUALIZER=true npm run build && xdg-open $(npm root)/../build/webpack-visualizer-stats.html",
     "visualizer": "npm run visualiser",
-    "generate": "plop",
-    "postinstall": "patch-package"
+    "generate": "plop"
   },
   "eslintConfig": {
     "extends": "react-app"
