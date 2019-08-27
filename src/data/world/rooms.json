@@ -54,8 +54,7 @@
     "zone": 0,
     "sector": 0,
     "description": [
-      "You stand in front of a closed door. It is made of some kind of hardwood. It looks sturdy.",
-      "It's also quite locked. You don't think you can open it."
+      "You stand in front of a closed door. It is made of some kind of hardwood. It looks sturdy.It's also quite locked. You don't think you can open it."
     ],
     "exits": [{
       "id": 0,
@@ -121,9 +120,7 @@
     "zone": 1,
     "sector": 1,
     "description": [
-      "You are in a well-forrested area. Ancient trees grow all around you.",
-      "Dappled light filters through the canopy above you. It is really quite pleasant here. You don't know why you thought the woods were spooky.",
-      "There is a small stream trickling by, near your feet."
+      "You are in a well-forrested area. Ancient trees grow all around you. Dappled light filters through the canopy above you. It is really quite pleasant here. You don't know why you thought the woods were spooky. There is a small stream trickling by, near your feet."
     ],
     "exits": [{
       "id": 0,

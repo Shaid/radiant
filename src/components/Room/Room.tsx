@@ -1,5 +1,4 @@
 import React from 'react'
-import Typist from 'react-typist'
 
 import styled, { breakpoints, theme } from 'theme'
 import { transparentize } from 'polished'
@@ -15,9 +14,18 @@ const Room = styled.div`
 
 const RoomDescription = styled.div`
   flex: 1 1 auto;
+`
 
+const Text = styled.div`
   p {
+    text-indent: 1rem;
     margin: 0 0 0.5rem 0;
+
+    /*
+    :first-of-type {
+      text-indent: 0;
+    }
+    */
   }
 `
 
@@ -65,12 +73,10 @@ const AreaName = styled.h2`
     font-variant: small-caps;
   }
 `
-interface InteractionProps {
-  display: string
-}
 
 const Interactions = styled.div`
-  ${(props: InteractionProps) => (props.display === 'true' ? 'opacity: 1; transition: opacity 0.2s ease-in-out;' : 'opacity: 0; transition: opacity 0s ease-in-out;')};
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
 `
 
 const Actors = styled.div`
@@ -94,23 +100,17 @@ export default class extends React.PureComponent<IProps, IState> { // eslint-dis
 
     this.state = {
       currentRoom: 0,
-      typingDone: false
     }
   }
 
   travelTo = (destination: number) => {
     this.setState({
       currentRoom: destination,
-      typingDone: false,
     })
   }
 
-  typingDone = () => {
-    this.setState({ typingDone: true })
-  }
-
   render() { // eslint-disable-line class-methods-use-this
-    const { currentRoom, typingDone } = this.state
+    const { currentRoom } = this.state
     const room = rooms[currentRoom]
     const zone = zones[room.zone]
     const sector = zone.sectors[room.sector]
@@ -120,7 +120,6 @@ export default class extends React.PureComponent<IProps, IState> { // eslint-dis
         <LocationDetails>
           <RoomName>
             <strong>{room.name}</strong>
-,
             {' '}
             {sector.name}
           </RoomName>
@@ -133,17 +132,10 @@ export default class extends React.PureComponent<IProps, IState> { // eslint-dis
           </AreaName>
         </LocationDetails>
         <RoomDescription>
-          <Typist
-            key={room.name}
-            cursor={{ show: false }}
-            avgTypingDelay={6} // was 12
-            stdTypingDelay={2} // was 5
-            startDelay={50} // was 100
-            onTypingDone={this.typingDone}
-          >
+          <Text>
             {room.description.map((paragraph: string) => (<p key={paragraph}>{paragraph}</p>))}
-          </Typist>
-          <Interactions display={typingDone.toString()}>
+          </Text>
+          <Interactions>
             <Exits action={this.travelTo} exits={room.exits} />
             <Actors>
               <Actor actor={getRandomActor()} />
