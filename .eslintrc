@@ -6,16 +6,18 @@
    "jest": true
   },
   "extends": [
-    "airbnb"
+    "plugin:react/recommended",
+    "bom"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "sourceType": "module"
   },
   "plugins": [
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "react"
   ],
-  "overrides": {
+  "overrides": [{
     "files": ["**/*.d.ts"],
     "rules": {
       "camelcase": "off",
@@ -26,7 +28,7 @@
       // we will put interfaces in *.d.ts files and ignore no-undef errors in them
       "no-undef": "off"
     }
-  },
+  }],
   "rules": {
     "arrow-body-style": ["error", "as-needed"],
     // Ensure consistent use of file extension within the import path
