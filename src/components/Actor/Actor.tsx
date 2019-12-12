@@ -39,6 +39,8 @@ const getActorDescription = (actor: any) => {
 }
 
 export default class extends React.PureComponent<IProps, IState> {
+  static displayName: 'Actor'
+
   static defaultProps: Partial<IDefaultProps> = {}
 
   render() {

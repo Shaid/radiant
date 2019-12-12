@@ -12,6 +12,8 @@ const EventsPanel = styled.div`
 `
 
 export default class extends React.PureComponent<IProps, IState> {
+  static displayName: 'EventsPanel'
+
   static defaultProps: Partial<IDefaultProps> = {}
 
   render() {

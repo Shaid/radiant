@@ -116,10 +116,12 @@ const ActionsList = styled.nav`
 
 
 export default class extends React.PureComponent<IProps, IState> {
+  static displayName: 'Interaction'
+
   static defaultProps: Partial<IDefaultProps> = {}
 
   actionsRef:any = React.createRef()
-  
+
   constructor(props: IProps, state: IState) {
     super(props, state)
 
@@ -174,7 +176,7 @@ export default class extends React.PureComponent<IProps, IState> {
     const { active } = this.state
 
     const actionsList = actions.map((action) => (
-      <button 
+      <button
         type="button"
         onClick={(event: React.MouseEvent<HTMLElement, MouseEvent>) => {
           if (active) {

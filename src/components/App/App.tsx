@@ -15,6 +15,8 @@ const App = styled.div`
 
 @observer
 class AppContainer extends React.Component<IProps> { // eslint-disable-line react/prefer-stateless-function
+  static displayName: 'AppContainer'
+
   render() { // eslint-disable-line class-methods-use-this
     // const store = this.props.store
     return (

@@ -21,6 +21,8 @@ const Button = styled.button`
 `
 
 export default class extends React.PureComponent<IProps, IState> {
+  static displayName: 'Action'
+
   static defaultProps: Partial<IDefaultProps> = {}
 
   render() {

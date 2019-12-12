@@ -50,6 +50,8 @@ const Bad = styled.span`
 `
 
 export default class extends React.PureComponent<IProps, IState> { // eslint-disable-line react/prefer-stateless-function
+  static displayName: 'StatusPanel'
+
   // static defaultProps: Partial<IDefaultProps> = {}
 
   render() { // eslint-disable-line class-methods-use-this

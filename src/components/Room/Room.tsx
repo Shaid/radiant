@@ -66,11 +66,11 @@ const AreaName = styled.h2`
   }
 `
 interface InteractionProps {
-  display: string
+  display: boolean
 }
 
 const Interactions = styled.div`
-  ${(props: InteractionProps) => (props.display === 'true' ? 'opacity: 1; transition: opacity 0.2s ease-in-out;' : 'opacity: 0; transition: opacity 0s ease-in-out;')};
+  ${(props: InteractionProps) => (props.display === true ? 'opacity: 1; transition: opacity 0.2s ease-in-out;' : 'opacity: 0; transition: opacity 0s ease-in-out;')};
 `
 
 const Actors = styled.div`
@@ -88,6 +88,8 @@ const getRandomActor = () => actors[Math.floor(Math.random() * actors.length)]
 
 export default class extends React.PureComponent<IProps, IState> { // eslint-disable-line react/prefer-stateless-function
   static defaultProps: Partial<IDefaultProps> = {}
+
+  static displayName: 'Room'
 
   constructor(props: IProps) {
     super(props)
@@ -143,7 +145,7 @@ export default class extends React.PureComponent<IProps, IState> { // eslint-dis
           >
             {room.description.map((paragraph: string) => (<p key={paragraph}>{paragraph}</p>))}
           </Typist>
-          <Interactions display={typingDone.toString()}>
+          <Interactions display={typingDone}>
             <Exits action={this.travelTo} exits={room.exits} />
             <Actors>
               <Actor actor={getRandomActor()} />

@@ -8,6 +8,8 @@ const {{ componentName }} = styled.div`
 `
 
 export default class extends React.PureComponent<IProps, IState> {
+  static displayName: '{{ componentName }}'
+
   static defaultProps: Partial<IDefaultProps> = {}
 
   render() {
