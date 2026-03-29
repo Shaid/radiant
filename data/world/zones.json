@@ -1,31 +1,16 @@
 [
   {
     "id": 0,
-    "name": "Villespont",
-    "shortTitle": "the City of Bridges",
-    "sectors": [
-      {
-      "id": 0,
-      "name": "the deeper spans"
-      },
-      {
-      "id": 1,
-      "name": "the lower city"
-      }
-    ]
-  },
-  {
-    "id": 1,
-    "name": "Belenoth",
-    "shortTitle": "the wilderness",
+    "name": "Melbourne",
+    "shortTitle": "West Footscray",
     "sectors": [
       {
         "id": 0,
-        "name": "a verdant plain"
+        "name": "your house"
       },
       {
         "id": 1,
-        "name": "the Old Woods"
+        "name": "barclay st"
       }
     ]
   }

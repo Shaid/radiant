@@ -1,32 +1,13 @@
 [
   {
     "id": 1,
-    "name": "Katarina",
-    "age": 32,
-    "gender": "female",
-    "appearance": {
-      "eyes": "green",
-      "hair": {
-        "colour": "brown",
-        "length": "shoulder-length"
-      }
-    },
-    "status": "bored",
-    "idleActions": [
-      "coughs",
-      "rolls her eyes",
-      "sighs"
-    ]
-  },
-  {
-    "id": 2,
-    "name": "Selene",
+    "name": "Cassandra",
     "age": 45,
     "gender": "female",
     "appearance": {
-      "eyes": "brown",
+      "eyes": "grey",
       "hair": {
-        "colour": "black",
+        "colour": "brown",
         "length": "long"
       }
     },
@@ -37,10 +18,11 @@
     ]
   },
   {
-    "id": 3,
+    "id": 2,
     "name": "Ragnar",
     "age": 37,
     "gender": "male",
+    "role": "city guard",
     "appearance": {
       "eyes": "grey",
       "hair": {

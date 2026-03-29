@@ -1,6 +1,6 @@
 [{
     "id": 0,
-    "name": "Lower Arch Station",
+    "name": "the living room",
     "zone": 0,
     "sector": 0,
     "description": [
@@ -25,7 +25,7 @@
   },
   {
     "id": 1,
-    "name": "The Bridge of Sighs",
+    "name": "the kitchen",
     "zone": 0,
     "sector": 0,
     "description": [
@@ -50,7 +50,7 @@
   },
   {
     "id": 2,
-    "name": "A closed door",
+    "name": "backyard",
     "zone": 0,
     "sector": 0,
     "description": [
@@ -74,6 +74,9 @@
       "\"BEHOLD\", shouts a guard, \"the grand city of Villespont!\".",
       "You stand before the city gate."
     ],
+    "actors": [
+      1
+    ],
     "exits": [{
         "id": 0,
         "description": [
@@ -93,7 +96,7 @@
   {
     "id": 4,
     "name": "A gravel road",
-    "zone": 1,
+    "zone": 0,
     "sector": 0,
     "description": [
       "You are on a deserted gravel road.",
@@ -118,7 +121,7 @@
   {
     "id": 5,
     "name": "A dappled glade",
-    "zone": 1,
+    "zone": 0,
     "sector": 1,
     "description": [
       "You are in a well-forrested area. Ancient trees grow all around you.",
