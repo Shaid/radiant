@@ -3,6 +3,7 @@ export interface IActor {
   name: string
   age: number
   gender: string
+  role?: string
   appearance: IActorAppearance
   status: string
   idleActions: string[]
@@ -23,7 +24,7 @@ export interface IState {
 }
 
 export interface IProps {
-  actor: IActor
+  id: number
 }
 
 export interface IDefaultProps {

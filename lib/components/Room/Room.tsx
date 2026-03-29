@@ -4,7 +4,8 @@ import React from 'react'
 
 import styled, { breakpoints, theme } from '../../theme'
 import { transparentize } from 'polished'
-import Actor from '../Actor'
+
+import Actors from './Actors'
 import Exits from './Exits'
 import { IProps, IDefaultProps, IState } from './Room.d'
 
@@ -74,18 +75,9 @@ const Interactions = styled.div<InteractionProps>`
   opacity: 1; 
 `
 
-const Actors = styled.div`
-  flex: 1 1 auto;
-  margin: 1rem 0;
-`
-
 // @todo Make room and it's travelTo() call use external props and state. Room should be from a store, etc.
 const rooms = require('../../../data/world/rooms.json')
 const zones = require('../../../data/world/zones.json')
-const actors = require('../../../data/actors/actors.json')
-
-//const getRandomActor = () => actors[Math.floor(Math.random() * actors.length)]
-const getRandomActor = () => actors[1]
 
 export default class extends React.PureComponent<IProps, IState> { // eslint-disable-line react/prefer-stateless-function
   static defaultProps: Partial<IDefaultProps> = {}
@@ -102,12 +94,7 @@ export default class extends React.PureComponent<IProps, IState> { // eslint-dis
   travelTo = (destination: number) => {
     this.setState({
       currentRoom: destination,
-      typingDone: false,
     })
-  }
-
-  typingDone = () => {
-    this.setState({ typingDone: true })
   }
 
   render() { // eslint-disable-line class-methods-use-this
@@ -120,26 +107,17 @@ export default class extends React.PureComponent<IProps, IState> { // eslint-dis
       <Room>
         <LocationDetails>
           <RoomName>
-            <strong>{room.name}</strong>
-,
-            {' '}
-            {sector.name}
+            <strong>{room.name}</strong>,{' '}{sector.name}
           </RoomName>
           <AreaName>
-            <strong>{zone.name}</strong>
-            {' '}
-&ndash;
-            {' '}
-            {zone.shortTitle}
+            <strong>{zone.name}</strong>{' '}&ndash;{' '}{zone.shortTitle}
           </AreaName>
         </LocationDetails>
         <RoomDescription>
           {room.description.map((paragraph: string) => (<p key={paragraph}>{paragraph}</p>))}
           <Interactions>
             <Exits action={this.travelTo} exits={room.exits} />
-            <Actors>
-              <Actor actor={getRandomActor()} />
-            </Actors>
+            <Actors actors={room.actors} />                          
           </Interactions>
         </RoomDescription>
       </Room>
