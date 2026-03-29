@@ -204,7 +204,7 @@ export default class extends React.PureComponent<IProps, IState> {
           {children}
         </Button>
         <ActiveView>
-          <ActionsList ref={this.actionsRef} count={actionsList.length + 1} active={active}>
+          <ActionsList ref={this.actionsRef} count={actions.length + 1} active={active}>
             <Description>
               {description}
             </Description>
