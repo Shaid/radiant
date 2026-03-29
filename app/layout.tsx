@@ -2,7 +2,6 @@ import type { Metadata } from "next"
 import StyledComponentsRegistry from '../lib/registry'
 
 import { Cormorant_Garamond, EB_Garamond } from "next/font/google"
-import "./globals.css"
 
 const garamond = EB_Garamond({
   subsets: ["latin"],
