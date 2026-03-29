@@ -1,9 +1,6 @@
 import { breakpoints, createGlobalStyle, theme } from '.'
-import importFonts from './fonts'
 
 const GlobalStyle = createGlobalStyle`
-  ${importFonts()}
-
   html {
     box-sizing: border-box;
     font-size: 18px;
@@ -55,7 +52,7 @@ const GlobalStyle = createGlobalStyle`
 export default GlobalStyle
 
 /*
-  -- background gradient animation --
+  -- background gradient animation (add to html element) --
 
   import { darken, lighten } from 'polished'
 

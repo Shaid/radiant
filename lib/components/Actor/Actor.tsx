@@ -28,10 +28,7 @@ const getActorDisplay = (actor: any) => {
 
   const gender = actor.gender === 'female' ? 'woman' : 'man'
 
-  if ((Math.random() * 2) > 1) {
-    return `A ${age} ${gender}`
-  }
-  return actor.name
+  return `A ${age} ${gender}`
 }
 
 const getActorDescription = (actor: any) => {

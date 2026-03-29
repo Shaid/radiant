@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@emotion/is-prop-valid": "^1.4.0",
     "@reduxjs/toolkit": "^2.11.2",
     "next": "16.2.1",
     "plop": "^4.0.5",
