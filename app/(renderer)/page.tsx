@@ -3,9 +3,9 @@
 import Image from "next/image";
 
 import React from 'react'
-import styled, { ThemeProvider, theme } from '../lib/theme'
-import GlobalStyle from '../lib/theme/globalStyles'
-import UI from '../lib/components/UI'
+import styled, { ThemeProvider, theme } from '../../lib/theme'
+import GlobalStyle from '../../lib/theme/globalStyles'
+import UI from '../../lib/components/UI'
 
 const App = styled.div`
   display: flex;
