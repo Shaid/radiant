@@ -24,7 +24,7 @@ class AppContainer extends React.Component<IProps> { // eslint-disable-line reac
     // const store = this.props.store
     return (
       <ThemeProvider theme={theme}>
-        <App>
+        <App suppressHydrationWarning>
           <GlobalStyle />
           <UI />
         </App>
