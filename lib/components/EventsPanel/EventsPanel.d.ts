@@ -1,8 +1,10 @@
+import React from "react"
+
 export interface IState {
 }
 
 export interface IProps {
-  children?: Object
+  children?: React.ReactNode
 }
 
 export interface IDefaultProps {

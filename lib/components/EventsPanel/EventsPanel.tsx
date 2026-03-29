@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { ReactNode } from 'react'
 import styled from '../../theme'
 
 import { IProps, IDefaultProps, IState } from './EventsPanel.d'
@@ -13,11 +13,11 @@ const EventsPanel = styled.div`
   padding: 5px;
 `
 
-export default class extends React.PureComponent<IProps, IState> {
+export default class extends React.Component<IProps, IState> {
   static defaultProps: Partial<IDefaultProps> = {}
 
   render() {
-    const { children } = this.props
+    const { children } = this.props 
     return (
       <EventsPanel>
         {children}
